@@ -1,11 +1,119 @@
-*{
-    margin: 0;
-    padding: 0;
-    border: none;
-    text-decoration: none;
-    box-sizing: border-box;
-    font-family: sans-serif;
+@import"./components/main";
+
+header {
+    width: 100%;
+    padding-top: 15vh;
+    color: $neutral;
+    height: 100vh;
+    background-image: url(../images/photo_2023-09-24_10-59-29.jpg);
+    background-repeat: no-repeat;
+    background-size: 1400px 700px;
+    display: flex;
+    flex-direction: column;
+    .bg-img{
+        background-color: rgba(0, 0, 0, 0.438);
+        width: 100%;
+        height: 100%;
+    }
+    h3 {
+        padding: 50px 0 30px 60px;
+        .bold {
+            font-size: 25px;
+            color: $mainBrandColor;
+        }
+    }
+    .p-head{
+        width: 100%;
+    }
+    .content-par {
+        width: 50%;
+        padding-left: 60px;
+        font-size: small;
+    }
+    .box-header {
+        display: flex;
+        width: 90%;
+        margin-left: 65px;
+        margin-top: 60px;
+        background-color: rgba(0, 0, 0, 0.495);
+        // padding: 60px 250px 20px 250px;
+        .box-content1 {
+            width: 50%;
+            background-color: #00addd7f;
+            height: 220px;
+            padding: 25px;
+
+            img {
+                width: 60px;
+            }
+
+            span {
+                @import url('https://fonts.googleapis.com/css2?family=Alice&display=swap');
+            }
+
+            h5 {
+                margin-top: 5px;
+                color: black;
+            }
+        }
+        .box-content2 {
+            width: 50%;
+            background-color: #00addd7f;
+            height: 220px;
+            padding: 25px;
+
+            img {
+                width: 60px;
+            }
+
+            h5 {
+                margin-top: 5px;
+                color: $thirdcolor;
+            }
+        }
+    }
+
 }
-h1{
-    color: red;
+
+.container {
+    .pic-content {
+        height: 80vh;
+        // background-color: #dfc74a;
+        background-image: url(/images/student-image.jpg);
+        background-size: 1400px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 90px;
+        .speaker1{
+            @include media;
+            @include get-space;
+            border-radius: 5px 20px 0 5px;
+            margin-left: 100px;
+        }
+        .speaker2{
+
+            @include media;
+            @include get-space;
+            border-radius: 5px 20px 0 5px;
+            margin-left: 300px;
+            margin-top: 30px;
+        }
+        .speaker3{
+            @include media;
+            @include get-space;
+            border-radius: 20px 5px 5px 0;
+            margin-left: 100px;
+            margin-right: 600px;
+            margin-top: 70px;
+
+        }
+        .para{
+            background-color: rgba(0, 0, 0, 0.394);
+            padding: 20px;
+            margin-top: 80px;
+            color: white;
+        }
+    }
+
 }
