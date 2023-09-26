@@ -1,5 +1,6 @@
 @import"./components/main";
 @import"./components/card";
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 header {
     width: 100%;
     padding-top: 15vh;
@@ -11,7 +12,7 @@ header {
     display: flex;
     flex-direction: column;
     .bg-img{
-        background-color: rgba(0, 0, 0, 0.438);
+        background-color: rgba(0, 0, 0, 0.309);
         width: 100%;
         height: 100%;
     }
@@ -26,9 +27,10 @@ header {
         width: 100%;
     }
     .content-par {
-        width: 60%;
+        width: 50%;
         padding-left: 60px;
         font-size: small;
+        text-align: justify;
     }
     .box-header {
         display: flex;
@@ -48,12 +50,17 @@ header {
             }
 
             span {
-                @import url('https://fonts.googleapis.com/css2?family=Alice&display=swap');
+                font-family: 'Dancing Script', cursive;
+                font-size: 25px;
+                margin-bottom: 10px;
+                color: $mainBrandColor;
+                padding-bottom: 20px;
             }
 
             h5 {
                 margin-top: 5px;
                 color: black;
+                text-align: justify;
             }
         }
         .box-content2 {
@@ -65,10 +72,16 @@ header {
             img {
                 width: 60px;
             }
-
+            span {
+                font-family: 'Dancing Script', cursive;
+                font-size: 25px;
+                margin-bottom: 10px;
+                color: $mainBrandColor;
+            }
             h5 {
                 margin-top: 5px;
                 color: $thirdcolor;
+                text-align: justify;
             }
         }
     }
