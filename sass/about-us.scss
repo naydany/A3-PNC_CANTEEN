@@ -1,1 +1,180 @@
 @import "./components/main";
+.main {
+    display: flex;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+
+    .container1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+
+        .h2-container1 {
+            border-bottom: double;
+            text-transform: uppercase;
+
+            .h2-container1>b {
+                font-size: 40px;
+                color: $mainBrandColor;
+            }
+        }
+
+        .p-container1 {
+            width: 90%;
+            margin: 20px;
+            text-align: justify;
+        }
+    }
+
+    .container2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+
+        .h2-container2 {
+            text-transform: uppercase;
+            color: $mainBrandColor;
+            border-bottom: double $thirdcolor;
+        }
+    }
+
+    .schedule {
+        background: url(../pnc-canteen.png);
+        background-repeat: no-repeat;
+        background-size: 95% 100%;
+        margin-left: 70px;
+        margin-top: 20px;
+
+        .content-schedule {
+            display: flex;
+            background: rgba(50, 133, 129, 0.541);
+            padding: 0px 0px 50px 0px;
+            width: 95%;
+            align-items: center;
+
+            .text-schedule {
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                color: $neutral;
+
+                .text {
+                    background-image: linear-gradient(1deg, rgba(14, 10, 10, 0.3), #1f1c1c);
+                    width: 90%;
+                    padding: 30px;
+                    margin-bottom: 50px;
+                    border-radius: 0px 0px 20px 0px;
+                }
+
+                .price {
+                    background-image: linear-gradient(1deg, rgba(14, 10, 10, 0.3), #1f1c1c);
+                    display: flex;
+                    text-align: center;
+                    justify-content: center;
+                    color: $mainBrandColor;
+                    margin-left: 20%;
+                    margin-top: 20px;
+                    width: 200px;
+                    padding: 10px;
+                    border-radius: 1000px;
+                }
+
+            }
+        }
+
+
+    }
+
+}
+
+.table,
+td,
+th {
+    border: 1px solid $neutral;
+    text-align: left;
+}
+
+.table {
+    margin-top: 50px;
+    margin-right: 40px;
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 12px;
+    background-image: linear-gradient(1deg, rgba(38, 37, 37, 0.3), #1c1b1b);
+    color: $neutral;
+
+    th,
+    td {
+        padding: 15px;
+    }
+    
+    th {
+        align-items: center;
+        text-align: center;
+    }
+    .Breakfast,
+    .Lunch,
+    .Dinner {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    
+    }
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    .best-food {
+        border-bottom: 2px solid $thirdcolor;
+        align-self: self-start;
+        margin-left: 70px;
+        margin-top: 20px;
+    }
+    .all-cards {
+        display: flex;
+        width: 98%;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 70px;
+        margin-top: 50px;
+        .card {
+            width: 250px;
+            border: 2px solid $thirdcolor;
+            border-radius: 40px 0px 40px 0px;
+            background-image: linear-gradient(1deg, rgba(94, 86, 86, 0.3), #5c5959);
+            justify-content: space-evenly;
+            img {
+                width: 100%;
+                height: 170px;
+                border-radius: 40px 0px 40px 0px;
+            }
+            .text-prices {
+                margin-top: 20px;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                
+                .prices {
+                    padding: 5px;
+                    border-radius: 10px 0px 10px 0px;
+                    width: 50%;
+                    margin: 20px 0px 20px 0px;
+                    background: orange;
+                    border: none;
+                    color: $neutral;
+                }
+            }
+        }
+    }
+}
