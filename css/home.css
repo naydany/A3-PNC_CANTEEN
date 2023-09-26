@@ -180,13 +180,12 @@ header .box-header {
   width: 90%;
   margin-left: 65px;
   margin-top: 60px;
-  background-color: rgba(0, 0, 0, 0.34);
 }
 header .box-header .box-content1 {
-  width: 50%;
+  width: 49%;
   background-color: rgba(0, 173, 221, 0.4980392157);
   height: 220px;
-  padding: 25px;
+  padding: 20px;
 }
 header .box-header .box-content1 img {
   width: 60px;
@@ -204,7 +203,7 @@ header .box-header .box-content1 h5 {
   text-align: justify;
 }
 header .box-header .box-content2 {
-  width: 50%;
+  width: 49%;
   background-color: rgba(0, 173, 221, 0.4980392157);
   height: 220px;
   padding: 25px;
