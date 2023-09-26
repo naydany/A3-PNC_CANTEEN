@@ -1,0 +1,31 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+@mixin cencered{
+    width: 39%;
+    height: 16vh;
+    border-radius: 100px;
+    background-size: 120px;
+    transform: translateY(-40px);
+    margin-left: 75px;
+    border: 2px solid white;
+}
+@mixin media{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@mixin get-space{
+    width: 25%;
+    height: 40px;
+    margin: 10px;
+    background-color:#18cec281 ;
+}
