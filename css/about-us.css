@@ -86,7 +86,7 @@ nav ul li a:hover {
   border-bottom: double black;
 }
 .main .schedule {
-  background: url(../pnc-canteen.png);
+  background: url(../images/canteen.png);
   background-repeat: no-repeat;
   background-size: 95% 100%;
   margin-left: 70px;
