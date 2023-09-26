@@ -43,6 +43,17 @@ nav ul li a {
   list-style: none;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+
 .content-cards {
   height: 70vh;
 }
@@ -126,17 +137,6 @@ nav ul li a {
   margin-left: 75px;
   border: 2px solid white;
   background-image: url(/images/char-misur.jpg);
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  border: none;
-  text-decoration: none;
-  box-sizing: border-box;
-  font-family: sans-serif;
-  text-decoration: none;
-  list-style: none;
 }
 
 header {
