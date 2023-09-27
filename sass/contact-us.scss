@@ -9,17 +9,19 @@ form{
 .picture{
     width: 33.33%;
     height: 100vh;
-    padding-top: 15vh;
+    padding-top: 20vh;
+   
 }
 .picture img{
-    padding-top: 5%;
-    padding-left:15% ;
-    height: 76%;
+    padding-left: 15vh;
+    height: 90%;
+    width: 95%;
 }
 .user-form{
     width: 47%;
     height: 100vh;
-    padding-top: 15vh;
+    padding-top: 20vh;
+    padding-left: 15vh;
 }
 .user-form h2{
     display: none;
@@ -30,21 +32,27 @@ form{
 .user-name input,.student-id input,.email input{
     height: 7vh;
     width: 45%;
-    margin-top: 3%;
     border: 2px solid black;
+    padding-left: 5px;
 }
+.student-id,.email,.feedback{
+    padding-top: 5vh;
+}
+
 .feedback input{
     height: 25vh;
-    margin-top: 3%;
     width: 91%;
     border: 2px solid black;
+    padding-left: 5px;
 }
 .btn{
-    margin-top: 6%;
     height: 7vh;
     width: 90%;
     border-radius:20px ;
     border: 2px solid teal;
     background-color:teal;
     color: white;
+}
+.button{
+    padding-top: 5vh;
 }
