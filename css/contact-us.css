@@ -111,9 +111,9 @@ form {
 }
 
 .picture img {
-  padding-left: 10%;
-  height: 76%;
-  width: 90%;
+  padding-left: 15vh;
+  height: 90%;
+  width: 95%;
 }
 
 .user-form {
