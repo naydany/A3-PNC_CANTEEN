@@ -4,9 +4,10 @@ nav {
   height: 15vh;
   width: 100%;
   border-bottom: 1px solid white;
-  background-color: rgba(75, 70, 70, 0.561);
+  background-color: rgba(0, 0, 0, 0.744);
   display: flex;
   position: fixed;
+  z-index: 1;
 }
 nav .logo {
   width: 50%;
@@ -34,6 +35,7 @@ nav ul li a {
 }
 nav ul li a:hover {
   border-bottom: 2px solid red;
+  color: red;
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   nav .logo {
@@ -89,7 +91,10 @@ nav ul li a:hover {
   flex-direction: row;
   justify-content: space-evenly;
 }
-.content-cards .cards .content-card {
+.content-cards .cards .content-card1,
+.content-cards .cards .content-card2,
+.content-cards .cards .content-card3,
+.content-cards .cards .content-card4 {
   position: relative;
   width: 250px;
   height: 140px;
@@ -98,7 +103,10 @@ nav ul li a:hover {
   box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
   border-radius: 10px 10px 0 0;
 }
-.content-cards .cards .content-card .card-image1 {
+.content-cards .cards .content-card1 .card-image1,
+.content-cards .cards .content-card2 .card-image1,
+.content-cards .cards .content-card3 .card-image1,
+.content-cards .cards .content-card4 .card-image1 {
   width: 39%;
   height: 16vh;
   border-radius: 100px;
@@ -108,23 +116,43 @@ nav ul li a:hover {
   border: 2px solid white;
   background-image: url(/images/Tik-krerng.jpg);
 }
-.content-cards .cards .content-card .card1 {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .content-cards .cards .content-card1 .content-card4,
+  .content-cards .cards .content-card2 .content-card4,
+  .content-cards .cards .content-card3 .content-card4,
+  .content-cards .cards .content-card4 .content-card4 {
+    display: none;
+  }
+}
+.content-cards .cards .content-card1 .card1,
+.content-cards .cards .content-card2 .card1,
+.content-cards .cards .content-card3 .card1,
+.content-cards .cards .content-card4 .card1 {
   position: relative;
   width: 100%;
   height: 100%;
   transform: translateY(-20px);
 }
-.content-cards .cards .content-card .card1 h4 {
+.content-cards .cards .content-card1 .card1 h4,
+.content-cards .cards .content-card2 .card1 h4,
+.content-cards .cards .content-card3 .card1 h4,
+.content-cards .cards .content-card4 .card1 h4 {
   margin-bottom: 10px;
   display: flex;
   justify-content: center;
 }
-.content-cards .cards .content-card .card1 .price {
+.content-cards .cards .content-card1 .card1 .price,
+.content-cards .cards .content-card2 .card1 .price,
+.content-cards .cards .content-card3 .card1 .price,
+.content-cards .cards .content-card4 .card1 .price {
   display: flex;
   justify-content: center;
   color: #dfc74a;
 }
-.content-cards .cards .content-card .card-image2 {
+.content-cards .cards .content-card1 .card-image2,
+.content-cards .cards .content-card2 .card-image2,
+.content-cards .cards .content-card3 .card-image2,
+.content-cards .cards .content-card4 .card-image2 {
   width: 39%;
   height: 16vh;
   border-radius: 100px;
@@ -134,7 +162,10 @@ nav ul li a:hover {
   border: 2px solid white;
   background-image: url(/images/cha-sondekkur.jpg);
 }
-.content-cards .cards .content-card .card-image3 {
+.content-cards .cards .content-card1 .card-image3,
+.content-cards .cards .content-card2 .card-image3,
+.content-cards .cards .content-card3 .card-image3,
+.content-cards .cards .content-card4 .card-image3 {
   width: 39%;
   height: 16vh;
   border-radius: 100px;
@@ -144,7 +175,10 @@ nav ul li a:hover {
   border: 2px solid white;
   background-image: url(/images/bay-sachjrouk.jpeg);
 }
-.content-cards .cards .content-card .card-image4 {
+.content-cards .cards .content-card1 .card-image4,
+.content-cards .cards .content-card2 .card-image4,
+.content-cards .cards .content-card3 .card-image4,
+.content-cards .cards .content-card4 .card-image4 {
   width: 39%;
   height: 16vh;
   border-radius: 100px;
@@ -162,12 +196,12 @@ header {
   height: 100vh;
   background-image: url(../images/photo_2023-09-24_10-59-29.jpg);
   background-repeat: no-repeat;
-  background-size: 1400px 700px;
+  background-size: cover;
   display: flex;
   flex-direction: column;
 }
 header .bg-img {
-  background-color: rgba(0, 0, 0, 0.309);
+  background-color: rgba(15, 13, 13, 0.309);
   width: 100%;
   height: 100%;
 }
@@ -187,11 +221,25 @@ header .content-par {
   font-size: small;
   text-align: justify;
 }
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  header .content-par {
+    padding-left: 40px;
+    padding-top: 40px;
+  }
+  header h3 {
+    padding: 80px 0 30px 40px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  header .content-par {
+    width: 70%;
+  }
+}
 header .box-header {
   display: flex;
   width: 90%;
   margin-left: 65px;
-  margin-top: 60px;
+  margin-top: 50px;
 }
 header .box-header .box-content1 {
   width: 49%;
@@ -234,11 +282,31 @@ header .box-header .box-content2 h5 {
   color: black;
   text-align: justify;
 }
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  header .box-header .box-content1 {
+    height: 320px;
+    width: 49%;
+  }
+  header .box-header .box-content2 {
+    height: 320px;
+    width: 49%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  header .box-header {
+    margin-top: 120px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  header .box-header {
+    margin-left: 40px;
+  }
+}
 
 .container .pic-content {
   height: 80vh;
   background-image: url(/images/student-image.jpg);
-  background-size: 1400px;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;

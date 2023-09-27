@@ -3,9 +3,10 @@ nav {
   height: 15vh;
   width: 100%;
   border-bottom: 1px solid white;
-  background-color: rgba(75, 70, 70, 0.561);
+  background-color: rgba(0, 0, 0, 0.744);
   display: flex;
   position: fixed;
+  z-index: 1;
 }
 nav .logo {
   width: 50%;
@@ -33,6 +34,7 @@ nav ul li a {
 }
 nav ul li a:hover {
   border-bottom: 2px solid red;
+  color: red;
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   nav .logo {

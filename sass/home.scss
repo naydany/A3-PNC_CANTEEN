@@ -9,12 +9,12 @@ header {
     height: 100vh;
     background-image: url(../images/photo_2023-09-24_10-59-29.jpg);
     background-repeat: no-repeat;
-    background-size: 1400px 700px;
+    background-size: cover;
     display: flex;
     flex-direction: column;
 
     .bg-img {
-        background-color: rgba(0, 0, 0, 0.309);
+        background-color: rgba(15, 13, 13, 0.309);
         width: 100%;
         height: 100%;
     }
@@ -38,12 +38,27 @@ header {
         font-size: small;
         text-align: justify;
     }
+    @include tablet {
+        .content-par {
+            padding-left: 40px;
+            padding-top: 40px;
+        }
+
+        h3 {
+            padding: 80px 0 30px 40px;
+        }
+    }
+    @include tablet {
+        .content-par {
+            width: 70%;
+        }
+    }
 
     .box-header {
         display: flex;
         width: 90%;
         margin-left: 65px;
-        margin-top: 60px;
+        margin-top: 50px;
 
         .box-content1 {
             width: 49%;
@@ -93,6 +108,28 @@ header {
                 text-align: justify;
             }
         }
+
+        @include tablet {
+            .box-content1 {
+                height: 320px;
+                width: 49%;
+            }
+
+            .box-content2 {
+                height: 320px;
+                width: 49%;
+            }
+        }
+
+        @include tablet {
+            margin-top: 120px;
+        }
+    }
+
+    @include tablet {
+        .box-header {
+            margin-left: 40px;
+        }
     }
 
 }
@@ -102,7 +139,7 @@ header {
         height: 80vh;
         // background-color: #dfc74a;
         background-image: url(/images/student-image.jpg);
-        background-size: 1400px;
+        background-size: cover;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -128,12 +165,12 @@ header {
             @include media;
             @include get-space;
             border-radius: 20px 5px 5px 0;
+
             margin: {
                 left: 100px;
                 right: 600px;
                 top: 70px;
             }
-
         }
 
         .para {

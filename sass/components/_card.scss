@@ -1,5 +1,6 @@
 @import"group-mixin";
 @import"vairiable";
+@import"media-queries";
 .content-cards{
     height: 70vh;
     background-color: rgba(0, 0, 0, 0.086);
@@ -18,7 +19,10 @@
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
-        .content-card{
+        .content-card1,
+        .content-card2,
+        .content-card3,
+        .content-card4{
             position: relative;
             width: 250px;
             height: 140px;
@@ -29,6 +33,11 @@
             .card-image1{
                 @include cencered;
                 background-image: url(/images/Tik-krerng.jpg);
+            }
+            @include tablet{
+                .content-card4{
+                    display: none;
+                }
             }
             .card1{
                 position: relative;
@@ -58,6 +67,7 @@
                 @include cencered;
                 background-image: url(/images/char-misur.jpg);
             }
+       
         }
     }
 
