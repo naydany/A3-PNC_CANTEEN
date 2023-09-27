@@ -60,7 +60,7 @@ nav ul li a:hover {
 .footer {
   width: 20%;
   height: 100vh;
-  padding-top: 15vh;
+  padding-top: 20vh;
   padding-left: 10vh;
 }
 
@@ -69,7 +69,7 @@ nav ul li a:hover {
 }
 
 .logo-pnc img {
-  padding: 5% 0% 0% 10%;
+  padding-left: 10%;
   height: 60%;
 }
 
