@@ -1,17 +1,15 @@
 @import "../sass/components/main";
 .main {
     display: flex;
-    padding-top: 100px;
+    padding-top: 150px;
     padding-bottom: 100px;
     width: 100%;
     height: 100vh;
     flex-direction: column;
 
     .container1 {
-        display: flex;
+        @include media;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
         margin-top: 20px;
 
         .h2-container1 {
@@ -32,9 +30,7 @@
     }
 
     .container2 {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include media;
         margin-top: 20px;
 
         .h2-container2 {
@@ -53,15 +49,15 @@
 
         .content-schedule {
             display: flex;
+            align-items: center;
             background: rgba(46, 122, 119, 0.038);
             padding: 0px 0px 50px 0px;
             width: 95%;
-            align-items: center;
 
             .text-schedule {
-                width: 50%;
                 display: flex;
                 flex-direction: column;
+                width: 50%;
                 color: $neutral;
 
                 .text {
@@ -73,10 +69,10 @@
                 }
 
                 .price {
-                    background-image: linear-gradient(1deg, rgba(14, 10, 10, 0.3), #1f1c1c);
                     display: flex;
                     text-align: center;
                     justify-content: center;
+                    background-image: linear-gradient(1deg, rgba(14, 10, 10, 0.3), #1f1c1c);
                     color: $mainBrandColor;
                     margin-left: 20%;
                     margin-top: 20px;
@@ -121,18 +117,16 @@ th {
     .Breakfast,
     .Lunch,
     .Dinner {
-        justify-content: center;
-        align-items: center;
         text-align: center;
+        align-items: center;
+        justify-content: center;
     
     }
 }
 
 .cards {
-    display: flex;
+    @include media;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     margin-top: 20px;
     .best-food {
         border-bottom: 2px solid $thirdcolor;
@@ -141,12 +135,10 @@ th {
         margin-top: 20px;
     }
     .all-cards {
-        display: flex;
-        width: 98%;
+        @include media;
         flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
         gap: 70px;
+        width: 98%;
         margin-top: 50px;
         .card {
             width: 250px;
@@ -160,10 +152,10 @@ th {
                 border-radius: 40px 0px 40px 0px;
             }
             .text-prices {
-                margin-top: 20px;
-                justify-content: center;
-                align-items: center;
                 text-align: center;
+                align-items: center;
+                justify-content: center;
+                margin-top: 20px;
                 
                 .prices {
                     padding: 5px;
