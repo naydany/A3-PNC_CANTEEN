@@ -1,0 +1,172 @@
+@import "../sass/components/main";
+.main {
+    display: flex;
+    padding-top: 150px;
+    padding-bottom: 100px;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+
+    .container1 {
+        @include media;
+        flex-direction: column;
+        margin-top: 20px;
+
+        .h2-container1 {
+            border-bottom: double;
+            text-transform: uppercase;
+
+            .h2-container1>b {
+                font-size: 40px;
+                color: $mainBrandColor;
+            }
+        }
+
+        .p-container1 {
+            width: 90%;
+            margin: 20px;
+            text-align: justify;
+        }
+    }
+
+    .container2 {
+        @include media;
+        margin-top: 20px;
+
+        .h2-container2 {
+            text-transform: uppercase;
+            color: $mainBrandColor;
+            border-bottom: double $thirdcolor;
+        }
+    }
+
+    .schedule {
+        background: url(../images/canteen.png);
+        background-repeat: no-repeat;
+        background-size: 95% 100%;
+        margin-left: 70px;
+        margin-top: 20px;
+
+        .content-schedule {
+            display: flex;
+            align-items: center;
+            background: rgba(46, 122, 119, 0.038);
+            padding: 0px 0px 50px 0px;
+            width: 95%;
+
+            .text-schedule {
+                display: flex;
+                flex-direction: column;
+                width: 50%;
+                color: $neutral;
+
+                .text {
+                    background-image: linear-gradient(1deg, rgba(14, 10, 10, 0.3), #1f1c1c);
+                    width: 90%;
+                    padding: 30px;
+                    margin-bottom: 50px;
+                    border-radius: 0px 0px 20px 0px;
+                }
+
+                .price {
+                    display: flex;
+                    text-align: center;
+                    justify-content: center;
+                    background-image: linear-gradient(1deg, rgba(14, 10, 10, 0.3), #1f1c1c);
+                    color: $mainBrandColor;
+                    margin-left: 20%;
+                    margin-top: 20px;
+                    width: 200px;
+                    padding: 10px;
+                    border-radius: 1000px;
+                }
+
+            }
+        }
+
+
+    }
+
+}
+
+.table,
+td,
+th {
+    border: 1px solid $neutral;
+    text-align: left;
+}
+
+.table {
+    margin-top: 50px;
+    margin-right: 40px;
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 12px;
+    background-image: linear-gradient(1deg, rgba(38, 37, 37, 0.3), #1c1b1b);
+    color: $neutral;
+
+    th,
+    td {
+        padding: 15px;
+    }
+    
+    th {
+        align-items: center;
+        text-align: center;
+    }
+    .Breakfast,
+    .Lunch,
+    .Dinner {
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    
+    }
+}
+
+.cards {
+    @include media;
+    flex-direction: column;
+    margin-top: 20px;
+    .best-food {
+        border-bottom: 2px solid $thirdcolor;
+        align-self: self-start;
+        margin-left: 70px;
+        margin-top: 20px;
+    }
+    .all-cards {
+        @include media;
+        flex-wrap: wrap;
+        gap: 70px;
+        width: 98%;
+        margin-top: 50px;
+        .card {
+            width: 250px;
+            border: 2px solid $thirdcolor;
+            border-radius: 40px 0px 40px 0px;
+            background-image: linear-gradient(1deg, rgba(94, 86, 86, 0.3), #5c5959);
+            justify-content: space-evenly;
+            img {
+                width: 100%;
+                height: 170px;
+                border-radius: 40px 0px 40px 0px;
+            }
+            .text-prices {
+                text-align: center;
+                align-items: center;
+                justify-content: center;
+                margin-top: 20px;
+                
+                .prices {
+                    padding: 5px;
+                    border-radius: 10px 0px 10px 0px;
+                    width: 50%;
+                    margin: 20px 0px 20px 0px;
+                    background: orange;
+                    border: none;
+                    color: $neutral;
+                }
+            }
+        }
+    }
+}

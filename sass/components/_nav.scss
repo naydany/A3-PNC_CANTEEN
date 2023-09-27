@@ -4,7 +4,8 @@ nav {
     height: 15vh;
     width: 100%;
     border-bottom: 1px solid $neutral;
-    background-color: rgba(0, 0, 0, 0.541);
+    // background-color: rgba(0, 0, 0, 0.541);
+    background-color: rgba(75, 70, 70, 0.561);
     display: flex;
     position: fixed;
     .logo {
@@ -31,8 +32,13 @@ nav {
         justify-content: space-evenly;
         li {
             a {
-                font-style: italic;
+                // font-style: italic;
                 color: $neutral;
+                
+                padding: 10px;
+            }
+            a:hover{
+                border-bottom: 2px solid red;
             }
         }
     }

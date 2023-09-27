@@ -1,9 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
 nav {
   color: white;
   height: 15vh;
   width: 100%;
   border-bottom: 1px solid white;
-  background-color: rgba(0, 0, 0, 0.541);
+  background-color: rgba(75, 70, 70, 0.561);
   display: flex;
   position: fixed;
 }
@@ -28,8 +29,22 @@ nav ul {
   justify-content: space-evenly;
 }
 nav ul li a {
-  font-style: italic;
   color: white;
+  padding: 10px;
+}
+nav ul li a:hover {
+  border-bottom: 2px solid red;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  text-decoration: none;
+  list-style: none;
 }
 
 * {
@@ -128,17 +143,6 @@ nav ul li a {
   background-image: url(/images/char-misur.jpg);
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  border: none;
-  text-decoration: none;
-  box-sizing: border-box;
-  font-family: sans-serif;
-  text-decoration: none;
-  list-style: none;
-}
-
 header {
   width: 100%;
   padding-top: 15vh;
@@ -151,7 +155,7 @@ header {
   flex-direction: column;
 }
 header .bg-img {
-  background-color: rgba(0, 0, 0, 0.438);
+  background-color: rgba(0, 0, 0, 0.309);
   width: 100%;
   height: 100%;
 }
@@ -169,32 +173,37 @@ header .content-par {
   width: 50%;
   padding-left: 60px;
   font-size: small;
+  text-align: justify;
 }
 header .box-header {
   display: flex;
   width: 90%;
   margin-left: 65px;
   margin-top: 60px;
-  background-color: rgba(0, 0, 0, 0.495);
 }
 header .box-header .box-content1 {
-  width: 50%;
+  width: 49%;
   background-color: rgba(0, 173, 221, 0.4980392157);
   height: 220px;
-  padding: 25px;
+  padding: 20px;
 }
 header .box-header .box-content1 img {
   width: 60px;
 }
 header .box-header .box-content1 span {
-  @import url("https://fonts.googleapis.com/css2?family=Alice&display=swap");
+  font-family: "Dancing Script", cursive;
+  font-size: 25px;
+  margin-bottom: 10px;
+  color: #dfc74a;
+  padding-bottom: 20px;
 }
 header .box-header .box-content1 h5 {
   margin-top: 5px;
   color: black;
+  text-align: justify;
 }
 header .box-header .box-content2 {
-  width: 50%;
+  width: 49%;
   background-color: rgba(0, 173, 221, 0.4980392157);
   height: 220px;
   padding: 25px;
@@ -202,9 +211,16 @@ header .box-header .box-content2 {
 header .box-header .box-content2 img {
   width: 60px;
 }
+header .box-header .box-content2 span {
+  font-family: "Dancing Script", cursive;
+  font-size: 25px;
+  margin-bottom: 10px;
+  color: #dfc74a;
+}
 header .box-header .box-content2 h5 {
   margin-top: 5px;
   color: black;
+  text-align: justify;
 }
 
 .container .pic-content {
