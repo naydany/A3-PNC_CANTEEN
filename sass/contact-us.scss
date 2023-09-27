@@ -1,22 +1,45 @@
 @import "./components/main";
 @import "./components/footer";
+
 form{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     display: flex;
 }
+@include tablet{
+    form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
 .picture{
     width: 33.33%;
     height: 100vh;
     padding-top: 20vh;
-   
+}
+@include tablet{
+    .picture{
+        width: 100%;
+        background-color: orange;
+        height: 60vh;
+        padding-top: 0vh;
+    }
 }
 .picture img{
     padding-left: 15vh;
     height: 90%;
     width: 95%;
 }
+@include tablet{
+    .picture img{
+        height: 100%;
+        width:100%;
+        padding-left: 0vh;
+    }
+}
+
 .user-form{
     width: 47%;
     height: 100vh;
