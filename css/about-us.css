@@ -48,7 +48,7 @@ nav ul li a:hover {
 
 .main {
   display: flex;
-  padding-top: 100px;
+  padding-top: 150px;
   padding-bottom: 100px;
   width: 100%;
   height: 100vh;
@@ -56,9 +56,9 @@ nav ul li a:hover {
 }
 .main .container1 {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  flex-direction: column;
   margin-top: 20px;
 }
 .main .container1 .h2-container1 {
@@ -94,15 +94,15 @@ nav ul li a:hover {
 }
 .main .schedule .content-schedule {
   display: flex;
+  align-items: center;
   background: rgba(46, 122, 119, 0.038);
   padding: 0px 0px 50px 0px;
   width: 95%;
-  align-items: center;
 }
 .main .schedule .content-schedule .text-schedule {
-  width: 50%;
   display: flex;
   flex-direction: column;
+  width: 50%;
   color: white;
 }
 .main .schedule .content-schedule .text-schedule .text {
@@ -113,10 +113,10 @@ nav ul li a:hover {
   border-radius: 0px 0px 20px 0px;
 }
 .main .schedule .content-schedule .text-schedule .price {
-  background-image: linear-gradient(1deg, rgba(14, 10, 10, 0.3), #1f1c1c);
   display: flex;
   text-align: center;
   justify-content: center;
+  background-image: linear-gradient(1deg, rgba(14, 10, 10, 0.3), #1f1c1c);
   color: #dfc74a;
   margin-left: 20%;
   margin-top: 20px;
@@ -152,16 +152,16 @@ th {
 .table .Breakfast,
 .table .Lunch,
 .table .Dinner {
-  justify-content: center;
-  align-items: center;
   text-align: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .cards {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  flex-direction: column;
   margin-top: 20px;
 }
 .cards .best-food {
@@ -172,11 +172,11 @@ th {
 }
 .cards .all-cards {
   display: flex;
-  width: 98%;
-  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 70px;
+  width: 98%;
   margin-top: 50px;
 }
 .cards .all-cards .card {
@@ -192,10 +192,10 @@ th {
   border-radius: 40px 0px 40px 0px;
 }
 .cards .all-cards .card .text-prices {
-  margin-top: 20px;
-  justify-content: center;
-  align-items: center;
   text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
 }
 .cards .all-cards .card .text-prices .prices {
   padding: 5px;
