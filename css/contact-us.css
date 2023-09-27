@@ -1,1 +1,140 @@
-/*# sourceMappingURL=contact-us.css.map */
+nav {
+  color: white;
+  height: 15vh;
+  width: 100%;
+  border-bottom: 1px solid white;
+  background-color: rgba(0, 0, 0, 0.541);
+  display: flex;
+  position: fixed;
+}
+nav .logo {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  margin-left: 60px;
+}
+nav .logo img {
+  height: 60px;
+  margin-right: 10px;
+}
+nav .logo h1 {
+  font-weight: bold;
+  color: white;
+}
+nav ul {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+nav ul li a {
+  font-style: italic;
+  color: white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+
+.content-cards {
+  height: 70vh;
+}
+.content-cards h3 {
+  color: #003edd;
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+.content-cards p {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+}
+.content-cards .cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.content-cards .cards .content-card {
+  position: relative;
+  width: 250px;
+  height: 140px;
+  background-color: rgba(24, 206, 194, 0.3882352941);
+  margin-top: 110px;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
+  border-radius: 10px 10px 0 0;
+}
+.content-cards .cards .content-card .card-image1 {
+  width: 39%;
+  height: 16vh;
+  border-radius: 100px;
+  background-size: 120px;
+  transform: translateY(-40px);
+  margin-left: 75px;
+  border: 2px solid white;
+  background-image: url(/images/Tik-krerng.jpg);
+}
+.content-cards .cards .content-card .card1 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform: translateY(-20px);
+}
+.content-cards .cards .content-card .card1 h4 {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+}
+.content-cards .cards .content-card .card1 .price {
+  display: flex;
+  justify-content: center;
+  color: #dfc74a;
+}
+.content-cards .cards .content-card .card-image2 {
+  width: 39%;
+  height: 16vh;
+  border-radius: 100px;
+  background-size: 120px;
+  transform: translateY(-40px);
+  margin-left: 75px;
+  border: 2px solid white;
+  background-image: url(/images/cha-sondekkur.jpg);
+}
+.content-cards .cards .content-card .card-image3 {
+  width: 39%;
+  height: 16vh;
+  border-radius: 100px;
+  background-size: 120px;
+  transform: translateY(-40px);
+  margin-left: 75px;
+  border: 2px solid white;
+  background-image: url(/images/bay-sachjrouk.jpeg);
+}
+.content-cards .cards .content-card .card-image4 {
+  width: 39%;
+  height: 16vh;
+  border-radius: 100px;
+  background-size: 120px;
+  transform: translateY(-40px);
+  margin-left: 75px;
+  border: 2px solid white;
+  background-image: url(/images/char-misur.jpg);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  text-decoration: none;
+  list-style: none;
+}/*# sourceMappingURL=contact-us.css.map */
