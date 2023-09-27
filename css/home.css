@@ -35,6 +35,17 @@ nav ul li a {
 nav ul li a:hover {
   border-bottom: 2px solid red;
 }
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  nav .logo {
+    width: 30%;
+    margin-left: 40px;
+  }
+  nav ul {
+    width: 70%;
+    margin-left: 10px;
+    display: flex;
+  }
+}
 
 * {
   margin: 0;
@@ -60,6 +71,7 @@ nav ul li a:hover {
 
 .content-cards {
   height: 70vh;
+  background-color: rgba(0, 0, 0, 0.086);
 }
 .content-cards h3 {
   color: #003edd;

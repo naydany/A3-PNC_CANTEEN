@@ -1,6 +1,7 @@
 @import"./components/main";
 @import"./components/card";
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
 header {
     width: 100%;
     padding-top: 15vh;
@@ -11,37 +12,45 @@ header {
     background-size: 1400px 700px;
     display: flex;
     flex-direction: column;
-    .bg-img{
+
+    .bg-img {
         background-color: rgba(0, 0, 0, 0.309);
         width: 100%;
         height: 100%;
     }
+
     h3 {
         padding: 50px 0 30px 60px;
+
         .bold {
             font-size: 25px;
             color: $mainBrandColor;
         }
     }
-    .p-head{
+
+    .p-head {
         width: 100%;
     }
+
     .content-par {
         width: 50%;
         padding-left: 60px;
         font-size: small;
         text-align: justify;
     }
+
     .box-header {
         display: flex;
         width: 90%;
         margin-left: 65px;
         margin-top: 60px;
+
         .box-content1 {
             width: 49%;
             background-color: #00addd7f;
             height: 220px;
             padding: 20px;
+
             img {
                 width: 60px;
             }
@@ -60,6 +69,7 @@ header {
                 text-align: justify;
             }
         }
+
         .box-content2 {
             width: 49%;
             background-color: #00addd7f;
@@ -69,12 +79,14 @@ header {
             img {
                 width: 60px;
             }
+
             span {
                 font-family: 'Dancing Script', cursive;
                 font-size: 25px;
                 margin-bottom: 10px;
                 color: $mainBrandColor;
             }
+
             h5 {
                 margin-top: 5px;
                 color: $thirdcolor;
@@ -95,13 +107,15 @@ header {
         flex-direction: column;
         align-items: center;
         padding-top: 90px;
-        .speaker1{
+
+        .speaker1 {
             @include media;
             @include get-space;
             border-radius: 5px 20px 0 5px;
             margin-left: 100px;
         }
-        .speaker2{
+
+        .speaker2 {
 
             @include media;
             @include get-space;
@@ -109,16 +123,20 @@ header {
             margin-left: 300px;
             margin-top: 30px;
         }
-        .speaker3{
+
+        .speaker3 {
             @include media;
             @include get-space;
             border-radius: 20px 5px 5px 0;
-            margin-left: 100px;
-            margin-right: 600px;
-            margin-top: 70px;
+            margin: {
+                left: 100px;
+                right: 600px;
+                top: 70px;
+            }
 
         }
-        .para{
+
+        .para {
             background-color: rgba(0, 0, 0, 0.394);
             padding: 20px;
             margin-top: 80px;
