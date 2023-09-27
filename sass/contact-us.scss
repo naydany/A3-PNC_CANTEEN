@@ -1,21 +1,43 @@
 @import "./components/main";
 @import "./components/footer";
+
 form{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     display: flex;
 }
+@include tablet{
+    form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
 .picture{
     width: 33.33%;
     height: 100vh;
     padding-top: 20vh;
-   
+}
+@include tablet{
+    .picture{
+        width: 100%;
+        background-color: orange;
+        height: 60vh;
+        padding-top: 0vh;
+    }
 }
 .picture img{
     padding-left: 15vh;
     height: 90%;
     width: 95%;
+}
+@include tablet{
+    .picture img{
+        height: 100%;
+        width:100%;
+        padding-left: 0vh;
+    }
 }
 .user-form{
     width: 47%;
@@ -23,8 +45,23 @@ form{
     padding-top: 20vh;
     padding-left: 15vh;
 }
+@include tablet{
+    .user-form{
+        width: 100%;
+        height: 100vh;
+        padding-top: 10vh;
+        padding-left: 6.5vh;
+    }
+}
 .user-form h2{
     display: none;
+}
+@include tablet{
+    .user-form h2{
+        display: block;
+        padding-bottom: 5vh;
+        padding-left: 35%;
+    }
 }
 .email {
     width: 202%;
@@ -52,6 +89,14 @@ form{
     border: 2px solid teal;
     background-color:teal;
     color: white;
+}
+@include tablet{
+    .btn{
+        height: 7vh;
+        width: 20%;
+        margin-left: 70%;
+        border-radius: 30px;
+    }
 }
 .button{
     padding-top: 5vh;
