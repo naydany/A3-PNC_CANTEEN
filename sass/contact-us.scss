@@ -18,27 +18,30 @@ form{
 .user-form{
     width: 47%;
     height: 100vh;
+    padding-top: 15vh;
 }
 .user-form h2{
     display: none;
 }
 .email {
-    width: 206%;
+    width: 202%;
 }
 .user-name input,.student-id input,.email input{
     height: 7vh;
     width: 45%;
     margin-top: 3%;
+    border: 2px solid black;
 }
 .feedback input{
     height: 25vh;
     margin-top: 3%;
-    width: 93%;
+    width: 91%;
+    border: 2px solid black;
 }
 .btn{
     margin-top: 6%;
     height: 7vh;
-    width: 95%;
+    width: 90%;
     border-radius:20px ;
     border: 2px solid teal;
     background-color:teal;
