@@ -1,4 +1,5 @@
 @import"vairiable";
+@import "media-queries";
 nav {
     color: $neutral;
     height: 15vh;
@@ -22,7 +23,8 @@ nav {
             font-weight: bold;
             color: $neutral;
         }
-    }
+    } 
+  
 
     ul {
         width: 50%;
@@ -41,4 +43,19 @@ nav {
             }
         }
     }
+
+    @include tablet{
+        .logo{
+            width: 30%;
+            margin-left: 40px;
+        }
+        ul{
+            width: 70%;
+            margin-left: 10px;
+            display: flex;
+            // justify-content: space-between;
+        }
+    }
+
+
 }
