@@ -16,10 +16,9 @@
 }
 @include mobile{
     .footer{
-        padding-left: 0vh;
+        padding-left: 12vh;
         padding-top: 2vh;
         height: 20vh;
-        gap: 35px;
     }
 }
 .logo-pnc{
@@ -33,8 +32,7 @@
 }
 @include mobile{
     .logo-pnc{
-        
-        width: 50%;
+        display: none;
     }
 }
 .logo-pnc img{
@@ -44,16 +42,6 @@
 @include tablet{
     .logo-pnc img{
         height: 25%;
-    }
-}
-@include mobile{
-    .logo-pnc img{
-        padding-left: 5vh;
-        height: 30%;
-    }
-    .logo-pnc p{
-        text-transform: lowercase;
-        padding-left: 3vh;
     }
 }
 .time-ate{
@@ -101,7 +89,7 @@
 }
 @include mobile{
     .socail-media{
-        width: 50%;
+        width: 90%;
         height: 50%;
     }
 }
@@ -115,7 +103,17 @@
         padding: 0% 0% 0% 3%;
     }
 }
+@include mobile{
+    .socail-media i{
+        padding: 8% 0% 0% 5%;
+    }
+}
 .socail-media p{
     padding-left: 7%;
+}
+@include mobile{
+    .socail-media p{
+        padding-left: 11%;
+    }
 }
 

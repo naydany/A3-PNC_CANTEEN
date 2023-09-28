@@ -78,10 +78,9 @@ nav ul li a:hover {
 }
 @media screen and (max-width: 600px) {
   .footer {
-    padding-left: 0vh;
+    padding-left: 12vh;
     padding-top: 2vh;
     height: 20vh;
-    gap: 35px;
   }
 }
 .logo-pnc {
@@ -96,7 +95,7 @@ nav ul li a:hover {
 }
 @media screen and (max-width: 600px) {
   .logo-pnc {
-    width: 50%;
+    display: none;
   }
 }
 .logo-pnc img {
@@ -107,16 +106,6 @@ nav ul li a:hover {
 @media screen and (max-width: 830px) {
   .logo-pnc img {
     height: 25%;
-  }
-}
-@media screen and (max-width: 600px) {
-  .logo-pnc img {
-    padding-left: 5vh;
-    height: 30%;
-  }
-  .logo-pnc p {
-    text-transform: lowercase;
-    padding-left: 3vh;
   }
 }
 .time-ate {
@@ -167,7 +156,7 @@ nav ul li a:hover {
 }
 @media screen and (max-width: 600px) {
   .socail-media {
-    width: 50%;
+    width: 90%;
     height: 50%;
   }
 }
@@ -182,10 +171,20 @@ nav ul li a:hover {
     padding: 0% 0% 0% 3%;
   }
 }
+@media screen and (max-width: 600px) {
+  .socail-media i {
+    padding: 8% 0% 0% 5%;
+  }
+}
 .socail-media p {
   padding-left: 7%;
 }
 
+@media screen and (max-width: 600px) {
+  .socail-media p {
+    padding-left: 11%;
+  }
+}
 * {
   margin: 0;
   padding: 0;
