@@ -119,9 +119,9 @@ nav ul li a:hover {
 }
 .main .schedule .content-schedule .text-schedule .text {
   background-image: linear-gradient(1deg, rgba(14, 10, 10, 0.3), #1f1c1c);
-  width: 75%;
+  width: 90%;
   padding: 30px;
-  margin-bottom: 65px;
+  margin-bottom: 45px;
   border-radius: 0px 0px 20px 0px;
 }
 .main .schedule .content-schedule .text-schedule .price {
@@ -232,7 +232,7 @@ nav ul li a:hover {
   font-size: 12px;
   margin-bottom: 10px;
   text-align: justify;
-  width: 85%;
+  width: 100%;
 }
 .main .cards .all-cards .card1 .card_content .card_description,
 .main .cards .all-cards .card2 .card_content .card_description,
@@ -247,7 +247,7 @@ nav ul li a:hover {
 .main .cards .all-cards .card11 .card_content .card_description,
 .main .cards .all-cards .card12 .card_content .card_description {
   font-size: 12px;
-  width: 85%;
+  width: 100%;
   text-align: justify;
   opacity: 0;
   transition: opacity 0.5s;
@@ -271,7 +271,8 @@ nav ul li a:hover {
   width: 50%;
   align-items: center;
   justify-content: center;
-  margin-left: 18%;
+  margin-left: 25%;
+  margin-top: 10px;
 }
 .main .cards .all-cards .card1:hover .card_content,
 .main .cards .all-cards .card2:hover .card_content,

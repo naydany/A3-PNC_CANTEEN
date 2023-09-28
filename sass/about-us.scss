@@ -66,9 +66,9 @@
 
                 .text {
                     background-image: linear-gradient(1deg, rgba(14, 10, 10, 0.3), #1f1c1c);
-                    width: 75%;
+                    width:90%;
                     padding: 30px;
-                    margin-bottom: 65px;
+                    margin-bottom: 45px;
                     border-radius: 0px 0px 20px 0px;
                 }
 
@@ -153,12 +153,12 @@
                         font-size: 12px;
                         margin-bottom: 10px;
                         text-align: justify;
-                        width: 85%;
+                        width: 100%;
                     }
 
                     .card_description {
                         font-size: 12px;
-                        width: 85%;
+                        width: 100%;
                         text-align: justify;
                         opacity: 0;
                         transition: opacity .5s;
@@ -172,7 +172,8 @@
                         width: 50%;
                         align-items: center;
                         justify-content: center;
-                        margin-left: 18%;
+                        margin-left: 25%;
+                        margin-top: 10px;
 
                     }
                 }
