@@ -66,15 +66,33 @@ nav ul li a:hover {
   padding-left: 10vh;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .footer {
+    padding-left: 10vh;
+    height: 40vh;
+    display: flex;
+    width: 100%;
+    padding-top: 0vh;
+    gap: 150px;
+    flex-wrap: wrap;
+  }
+}
 .logo-pnc {
   height: 15%;
 }
 
 .logo-pnc img {
-  padding-left: 10%;
-  height: 60%;
+  height: 50%;
+  padding-left: 3vh;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .logo-pnc img {
+    padding-left: 3vh;
+    height: 200%;
+    margin-top: 2vh;
+  }
+}
 .time-ate {
   height: 20%;
   padding-top: 3vh;
@@ -87,22 +105,44 @@ nav ul li a:hover {
 
 .socail-media {
   height: 20%;
-  padding-top: 13vh;
+  padding-top: 15vh;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .socail-media {
+    padding-top: 0vh;
+    width: 100%;
+    height: 50vh;
+    padding-left: 40vh;
+  }
+}
 .socail-media i {
   padding: 8% 0% 0% 3%;
   font-size: 30px;
   color: teal;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .socail-media i {
+    padding: 0% 0% 0% 0%;
+  }
+}
 .socail-media p {
   padding-left: 7%;
 }
 
-form {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .socail-media p {
+    padding-left: 0%;
+  }
+}
+* {
   margin: 0;
   padding: 0;
+  font-family: sans-serif;
+}
+
+form {
   box-sizing: border-box;
   display: flex;
 }
@@ -111,11 +151,10 @@ form {
   form {
     display: flex;
     flex-direction: column;
-    align-items: center;
   }
 }
 .picture {
-  width: 33.33%;
+  width: 33%;
   height: 100vh;
   padding-top: 20vh;
 }
@@ -167,11 +206,13 @@ form {
     padding-left: 35%;
   }
 }
-.email {
-  width: 202%;
+input[type=text] {
+  border: 2px solid black;
+  padding: 13px;
+  width: 90%;
 }
 
-.user-name input, .student-id input, .email input {
+.user-name input, .student-id input {
   height: 7vh;
   width: 45%;
   border: 2px solid black;
