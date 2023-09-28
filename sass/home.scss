@@ -38,6 +38,7 @@ header {
         font-size: small;
         text-align: justify;
     }
+
     @include tablet {
         .content-par {
             padding-left: 40px;
@@ -48,6 +49,7 @@ header {
             padding: 80px 0 30px 40px;
         }
     }
+
     @include tablet {
         .content-par {
             width: 70%;
@@ -131,7 +133,6 @@ header {
             margin-left: 40px;
         }
     }
-
 }
 
 .container {
@@ -173,11 +174,39 @@ header {
             }
         }
 
+        @include tablet {
+            .speaker1 {
+                width: 40%;
+                height: 40px;
+                margin-top: 95px;
+                margin-left: 85px;
+            }
+            .speaker2{
+                width: 40%;
+                height: 40px;
+            }
+            .speaker3{
+                width: 40%;
+                height: 40px;
+                margin: {
+                    left: 600px;
+                    right: 600px;
+                    top: 90px;
+                }
+            }
+        }
+
         .para {
             background-color: rgba(0, 0, 0, 0.394);
             padding: 20px;
             margin-top: 80px;
             color: white;
+        }
+        @include tablet{
+            .para{
+                margin-top: 200px;
+            }
+            
         }
     }
 
