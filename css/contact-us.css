@@ -206,6 +206,15 @@ form {
     padding-left: 6.5vh;
   }
 }
+@media screen and (max-width: 600px) {
+  .user-form {
+    background-color: orange;
+    width: 100%;
+    height: 80vh;
+    padding-top: 5vh;
+    padding-left: 4vh;
+  }
+}
 .user-form h2 {
   display: none;
 }
@@ -215,6 +224,12 @@ form {
     display: block;
     padding-bottom: 5vh;
     padding-left: 35%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .user-form h2 {
+    display: block;
+    padding-left: 15%;
   }
 }
 input[type=text] {
@@ -242,6 +257,11 @@ input[type=text] {
   padding-top: 5vh;
 }
 
+@media screen and (max-width: 600px) {
+  .student-id, .email, .feedback {
+    padding-top: 3vh;
+  }
+}
 .feedback input {
   height: 25vh;
   width: 91%;
@@ -249,6 +269,11 @@ input[type=text] {
   padding-left: 5px;
 }
 
+@media screen and (max-width: 600px) {
+  .feedback input {
+    height: 20vh;
+  }
+}
 .btn {
   height: 7vh;
   width: 90%;
@@ -264,6 +289,14 @@ input[type=text] {
     width: 20%;
     margin-left: 70%;
     border-radius: 30px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .btn {
+    height: 5vh;
+    width: 30%;
+    margin-left: 58%;
+    border-radius: 20px;
   }
 }
 .button {
