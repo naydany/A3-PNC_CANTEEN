@@ -184,12 +184,6 @@ nav ul li a:hover {
     height: auto;
   }
 }
-@media screen and (max-width: 830px) {
-  .main .schedule {
-    width: auto;
-    margin-left: 20px;
-  }
-}
 @media screen and (max-width: 600px) {
   .main .schedule {
     display: flex;
@@ -439,6 +433,7 @@ th {
 @media screen and (max-width: 830px) {
   .schedule {
     width: 100%;
+    margin-left: 20px;
   }
   .table {
     font-size: 48%;
