@@ -66,6 +66,11 @@ nav ul li a:hover {
   padding-left: 10vh;
 }
 
+@media screen and (max-width: 830px) {
+  .footer {
+    background-color: orange;
+  }
+}
 .logo-pnc {
   height: 15%;
 }
@@ -176,6 +181,13 @@ input[type=text] {
   width: 90%;
 }
 
+@media screen and (max-width: 830px) {
+  input[type=text] {
+    border: 2px solid black;
+    padding: 13px;
+    width: 91%;
+  }
+}
 .user-name input, .student-id input {
   height: 7vh;
   width: 45%;

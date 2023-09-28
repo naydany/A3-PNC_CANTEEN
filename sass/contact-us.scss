@@ -73,6 +73,13 @@ input[type="text"]{
     padding: 13px;
     width: 90%;
 }
+@include tablet{
+    input[type="text"]{
+        border: 2px solid black;
+        padding: 13px;
+        width: 91%;
+    }
+}
 .user-name input,.student-id input{
     height: 7vh;
     width: 45%;

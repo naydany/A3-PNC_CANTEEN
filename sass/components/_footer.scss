@@ -4,6 +4,11 @@
     padding-top: 20vh;
     padding-left: 10vh;
 }
+@include tablet{
+    .footer{
+        background-color: orange;
+    }
+}
 .logo-pnc{
     height: 15%;
 }
