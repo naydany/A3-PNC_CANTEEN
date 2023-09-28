@@ -6,7 +6,7 @@ nav {
     width: 100%;
     border-bottom: 1px solid $neutral;
     background-color: rgba(0, 0, 0, 0.744);
-    // background-color: rgba(75, 70, 70, 0.561);
+    // background-color: rgba(27, 55, 85, 0.561);
     display: flex;
     position: fixed;
     z-index: 1;
@@ -36,12 +36,11 @@ nav {
             a {
                 // font-style: italic;
                 color: $neutral;
-
                 padding: 10px;
             }
             a:hover{
                 border-bottom: 2px solid red;
-                color: red;
+                // color: red;
             }
         }
     }

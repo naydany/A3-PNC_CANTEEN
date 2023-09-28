@@ -10,13 +10,15 @@
     list-style: none;
 }
 @mixin cencered{
-    width: 45%;
-    height: 19vh;
+    width: 118px;
+    height: 115px;
     border-radius: 100px;
     background-size: cover;
     transform: translateY(-40px);
-    margin-left: 70px;
-    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.242);
+    // margin-left: 70px;
+    display: flex;
+    margin: auto;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.464);
 }
 @mixin media{
     display: flex;
