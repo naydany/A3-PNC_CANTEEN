@@ -4,12 +4,17 @@
     padding-top: 20vh;
     padding-left: 10vh;
 }
+@include tablet{
+    .footer{
+        background-color: orange;
+    }
+}
 .logo-pnc{
     height: 15%;
 }
 .logo-pnc img{
-    padding-left:10%;
-    height: 60%;
+    height: 50%;
+    padding-left: 3vh;
 }
 .time-ate{
     height: 20%;
@@ -21,8 +26,7 @@
 }
 .socail-media{
     height: 20%;
-    padding-top: 13vh;
-    
+    padding-top: 15vh;
 }
 .socail-media i{
     padding: 8% 0% 0% 3%;
