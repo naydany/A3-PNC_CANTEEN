@@ -85,6 +85,13 @@ nav ul li a:hover {
   margin: 20px;
   text-align: justify;
 }
+@media screen and (max-width: 600px) {
+  .main .container1 {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+}
 .main .container2 {
   display: flex;
   align-items: center;
@@ -96,8 +103,14 @@ nav ul li a:hover {
   color: #dfc74a;
   border-bottom: double black;
 }
+@media screen and (max-width: 600px) {
+  .main .container2 {
+    width: auto;
+    align-items: center;
+  }
+}
 .main .schedule {
-  background: url(../images/pnc-canteen.png);
+  background: url(../../pnc-canteen.png);
   background-repeat: no-repeat;
   background-size: 95% 100%;
   margin-left: 70px;
@@ -118,22 +131,72 @@ nav ul li a:hover {
 }
 .main .schedule .content-schedule .text-schedule .text {
   background-image: linear-gradient(1deg, rgba(14, 10, 10, 0.3), #1f1c1c);
-  width: 90%;
+  width: 75%;
   padding: 30px;
-  margin-bottom: 45px;
+  margin-bottom: 65px;
   border-radius: 0px 0px 20px 0px;
+}
+@media screen and (max-width: 830px) {
+  .main .schedule .content-schedule .text-schedule .text {
+    width: 60%;
+    text-align: justify;
+  }
 }
 .main .schedule .content-schedule .text-schedule .price {
   display: flex;
   text-align: center;
   justify-content: center;
-  background-image: linear-gradient(1deg, rgba(14, 10, 10, 0.3), #1f1c1c);
+  background-image: linear-gradient(1deg, rgba(14, 10, 10, 0.3), rgba(46, 46, 45, 0.9098039216));
   color: #dfc74a;
   margin-left: 20%;
   margin-top: 20px;
   width: 200px;
   padding: 10px;
   border-radius: 1000px;
+}
+@media screen and (max-width: 830px) {
+  .main .schedule .content-schedule .text-schedule .price {
+    width: 100px;
+    margin-left: 20px;
+  }
+}
+@media screen and (max-width: 830px) {
+  .main .schedule .content-schedule .text-schedule {
+    margin-top: 100px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .main .schedule .content-schedule .text-schedule {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-left: 40px;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .main .schedule .content-schedule {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    height: auto;
+  }
+}
+@media screen and (max-width: 830px) {
+  .main .schedule {
+    width: auto;
+    margin-left: 20px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .main .schedule {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+  }
 }
 .main .cards {
   display: flex;
@@ -147,6 +210,13 @@ nav ul li a:hover {
   align-self: self-start;
   margin-left: 70px;
   margin-top: 10px;
+}
+@media screen and (max-width: 600px) {
+  .main .cards .best-food {
+    display: flex;
+    justify-content: start;
+    margin-left: 30px;
+  }
 }
 .main .cards .all-cards {
   display: flex;
@@ -231,7 +301,7 @@ nav ul li a:hover {
   font-size: 12px;
   margin-bottom: 10px;
   text-align: justify;
-  width: 100%;
+  width: 85%;
 }
 .main .cards .all-cards .card1 .card_content .card_description,
 .main .cards .all-cards .card2 .card_content .card_description,
@@ -246,7 +316,7 @@ nav ul li a:hover {
 .main .cards .all-cards .card11 .card_content .card_description,
 .main .cards .all-cards .card12 .card_content .card_description {
   font-size: 12px;
-  width: 100%;
+  width: 85%;
   text-align: justify;
   opacity: 0;
   transition: opacity 0.5s;
@@ -270,8 +340,49 @@ nav ul li a:hover {
   width: 50%;
   align-items: center;
   justify-content: center;
-  margin-left: 25%;
-  margin-top: 10px;
+  margin-left: 18%;
+}
+@media screen and (max-width: 830px) {
+  .main .cards .all-cards .card1,
+  .main .cards .all-cards .card2,
+  .main .cards .all-cards .card3,
+  .main .cards .all-cards .card4,
+  .main .cards .all-cards .card5,
+  .main .cards .all-cards .card6,
+  .main .cards .all-cards .card7,
+  .main .cards .all-cards .card8,
+  .main .cards .all-cards .card9,
+  .main .cards .all-cards .card10,
+  .main .cards .all-cards .card11,
+  .main .cards .all-cards .card12 {
+    position: relative;
+    width: 180px;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 20px 0px 20px 0px;
+    border: 1px solid;
+  }
+}
+@media screen and (max-width: 600px) {
+  .main .cards .all-cards .card1,
+  .main .cards .all-cards .card2,
+  .main .cards .all-cards .card3,
+  .main .cards .all-cards .card4,
+  .main .cards .all-cards .card5,
+  .main .cards .all-cards .card6,
+  .main .cards .all-cards .card7,
+  .main .cards .all-cards .card8,
+  .main .cards .all-cards .card9,
+  .main .cards .all-cards .card10,
+  .main .cards .all-cards .card11,
+  .main .cards .all-cards .card12 {
+    position: relative;
+    width: 230px;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 20px 0px 20px 0px;
+    border: 1px solid;
+  }
 }
 .main .cards .all-cards .card1:hover .card_content,
 .main .cards .all-cards .card2:hover .card_content,
@@ -302,6 +413,11 @@ nav ul li a:hover {
   opacity: 1;
   transition-delay: 0.25s;
 }
+@media screen and (max-width: 600px) {
+  .main .all-cards {
+    width: 95%;
+  }
+}
 
 .table,
 td,
@@ -320,6 +436,23 @@ th {
   color: white;
 }
 
+@media screen and (max-width: 830px) {
+  .schedule {
+    width: 100%;
+  }
+  .table {
+    font-size: 48%;
+    margin-bottom: 20px;
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 600px) {
+  .table {
+    width: 100%;
+    align-items: center;
+    margin: 20px;
+  }
+}
 .table th,
 .table td {
   padding: 15px;
@@ -339,73 +472,73 @@ th {
 }
 
 .card1 {
-  background: url(../images/shopfood.jpg);
+  background: url(../../shopfood.jpg);
   background-size: 100% 160px;
   background-repeat: no-repeat;
 }
 
 .card2 {
-  background: url(../images/SomlorBrher.png);
+  background: url(../../SomlorBrher.png);
   background-size: 100% 160px;
   background-repeat: no-repeat;
 }
 
 .card3 {
-  background: url(../images/SomlorBroleth.png);
+  background: url(../../SomlorBroleth.png);
   background-size: 100% 160px;
   background-repeat: no-repeat;
 }
 
 .card4 {
-  background: url(../images/namngov.png);
+  background: url(../../namngov.png);
   background-size: 100% 160px;
   background-repeat: no-repeat;
 }
 
 .card5 {
-  background: url(../images/Sngor-spey.png);
+  background: url(../../Sngor-spey.png);
   background-size: 100% 160px;
   background-repeat: no-repeat;
 }
 
 .card6 {
-  background: url(../images/taoho.png);
+  background: url(../../taoho.png);
   background-size: 100% 160px;
   background-repeat: no-repeat;
 }
 
 .card7 {
-  background: url(../images/Tik-krerng.jpg);
+  background: url(../../Tik-krerng.jpg);
   background-size: 100% 160px;
   background-repeat: no-repeat;
 }
 
 .card8 {
-  background: url(../images/Chha\ tro\ koun.png);
+  background: url(../../Fry-corn.avif);
   background-size: 100% 160px;
   background-repeat: no-repeat;
 }
 
 .card9 {
-  background: url(../images/korko.png);
+  background: url(../../korko.png);
   background-size: 100% 160px;
   background-repeat: no-repeat;
 }
 
 .card10 {
-  background: url(../images/Khor.png);
+  background: url(../../Khor.png);
   background-size: 100% 160px;
   background-repeat: no-repeat;
 }
 
 .card11 {
-  background: url(../images/char-misur.jpg);
+  background: url(../../nhom.jpg);
   background-size: 100% 160px;
   background-repeat: no-repeat;
 }
 
 .card12 {
-  background: url(../images/cha-sondekkur.jpg);
+  background: url(../../cha-sondekkur.jpg);
   background-size: 100% 160px;
   background-repeat: no-repeat;
 }/*# sourceMappingURL=about-us.css.map */
