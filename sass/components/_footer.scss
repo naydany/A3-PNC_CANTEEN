@@ -6,13 +6,13 @@
 }
 @include tablet{
     .footer{
-        background-color: orange;
         display: flex;
         height: 30vh;
         width: 100%;
-        padding-top: 0vh;
-        padding-left: 0vh;
-    }
+        padding-top: 5vh;
+        padding-left: 5vh;
+        border-top: 2px solid black;
+    }  
 }
 .logo-pnc{
     height: 15%;
@@ -21,7 +21,6 @@
     .logo-pnc{  
     height: 100%;
     width: 25%;
-    background-color: wheat;
 }
 }
 .logo-pnc img{
@@ -30,7 +29,7 @@
 }
 @include tablet{
     .logo-pnc img{
-        height: 30%;
+        height: 25%;
     }
 }
 .time-ate{
@@ -41,7 +40,6 @@
     .time-ate{
     width: 25%;
     height: 100%;
-    background-color: blue;
     padding-top: 0vh;
     }
 }
@@ -54,7 +52,6 @@
     height: 100%;
     width: 25%;
     padding-top: 0vh;
-    background-color: teal;
     }
 }
 .socail-media{
@@ -66,7 +63,6 @@
     height: 100%;
     width: 25%;
     padding-top: 0vh;
-    background-color: red;
     }
 }
 .socail-media i{
