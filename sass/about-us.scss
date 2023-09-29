@@ -20,7 +20,7 @@
 
             b {
                 font-size: 40px;
-                color: #dfc74a;
+                color:$mainBrandColor;
             }
         }
         @include responsive ('tablet'){
@@ -57,8 +57,8 @@
 
         .h2-container2 {
             text-transform: uppercase;
-            color: #dfc74a;
-            border-bottom: double black;
+            color:$mainBrandColor;
+            border-bottom: double $thirdcolor;
         }
         @include responsive ('tablet'){
             .h2-container2{
@@ -91,7 +91,7 @@
                 display: flex;
                 flex-direction: column;
                 width: 50%;
-                color: white;
+                color:$neutral;
 
                 .text {
                     background-image: linear-gradient(1deg, rgba(14, 10, 10, 0.3), #1f1c1c);
@@ -115,7 +115,7 @@
                     text-align: center;
                     justify-content: center;
                     background-image: linear-gradient(1deg, rgba(14, 10, 10, 0.3), #2e2e2de8);
-                    color: #dfc74a;
+                    color:$mainBrandColor;
                     margin-left: 15%;
                     margin-top: 20px;
                     width: 200px;
@@ -172,7 +172,7 @@
         margin-top: 20px;
 
         .best-food {
-            border-bottom: 2px solid black;
+            border-bottom: 2px solid $thirdcolor;
             align-self: self-start;
             margin-left: 70px;
             margin-top: 10px;
@@ -241,7 +241,7 @@
                     }
 
                     .prices {
-                        background: gold;
+                        background: $mainBrandColor;
                         border: none;
                         border-radius: 10px;
                         padding: 5px;
@@ -331,7 +331,7 @@
     .table,
     td,
     th {
-        border: 1px solid white;
+        border: 1px solid$neutral;
         text-align: left;
     }
 
@@ -342,7 +342,7 @@
         width: 100%;
         font-size: 12px;
         background-image: linear-gradient(1deg, rgba(38, 37, 37, 0.3), #1c1b1b);
-        color: white;
+        color:$neutral;
     }
 
     @include responsive ('tablet'){
