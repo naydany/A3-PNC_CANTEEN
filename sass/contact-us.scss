@@ -55,14 +55,14 @@ form{
             }
         }
         @include responsive('tablet'){
-            .user-form h2{
+            h2{
                 display: block;
                 padding-bottom: 5vh;
                 padding-left: 35%;
             }
         }
         @include responsive('mobile'){
-            .user-form h2{
+            h2{
                 display: block;
                 padding-left: 15%;
             }
@@ -100,14 +100,14 @@ form{
         }
     }
     .feedback{
-        input{
+        input[type='text']{
             height: 25vh;
             width: 91%;
             border: 2px solid $thirdcolor;
             padding-left: 5px;
         }
         @include responsive('mobile'){
-            .feedback input{
+            input{
                 height: 20vh;
             }
         }
