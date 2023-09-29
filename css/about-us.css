@@ -110,7 +110,7 @@ nav ul li a:hover {
   }
 }
 .main .schedule {
-  background: url(../../pnc-canteen.png);
+  background: url(../images/pnc-canteen.png);
   background-repeat: no-repeat;
   background-size: 95% 100%;
   margin-left: 70px;
@@ -131,9 +131,9 @@ nav ul li a:hover {
 }
 .main .schedule .content-schedule .text-schedule .text {
   background-image: linear-gradient(1deg, rgba(14, 10, 10, 0.3), #1f1c1c);
-  width: 75%;
+  width: 90%;
   padding: 30px;
-  margin-bottom: 65px;
+  margin-bottom: 45px;
   border-radius: 0px 0px 20px 0px;
 }
 @media screen and (max-width: 830px) {
@@ -148,7 +148,7 @@ nav ul li a:hover {
   justify-content: center;
   background-image: linear-gradient(1deg, rgba(14, 10, 10, 0.3), rgba(46, 46, 45, 0.9098039216));
   color: #dfc74a;
-  margin-left: 20%;
+  margin-left: 15%;
   margin-top: 20px;
   width: 200px;
   padding: 10px;
@@ -182,12 +182,6 @@ nav ul li a:hover {
     flex-direction: column;
     width: 95%;
     height: auto;
-  }
-}
-@media screen and (max-width: 830px) {
-  .main .schedule {
-    width: auto;
-    margin-left: 20px;
   }
 }
 @media screen and (max-width: 600px) {
@@ -240,7 +234,7 @@ nav ul li a:hover {
 .main .cards .all-cards .card11,
 .main .cards .all-cards .card12 {
   position: relative;
-  width: 250px;
+  width: 254px;
   height: 250px;
   overflow: hidden;
   border-radius: 20px 0px 20px 0px;
@@ -301,7 +295,7 @@ nav ul li a:hover {
   font-size: 12px;
   margin-bottom: 10px;
   text-align: justify;
-  width: 85%;
+  width: 100%;
 }
 .main .cards .all-cards .card1 .card_content .card_description,
 .main .cards .all-cards .card2 .card_content .card_description,
@@ -316,7 +310,7 @@ nav ul li a:hover {
 .main .cards .all-cards .card11 .card_content .card_description,
 .main .cards .all-cards .card12 .card_content .card_description {
   font-size: 12px;
-  width: 85%;
+  width: 100%;
   text-align: justify;
   opacity: 0;
   transition: opacity 0.5s;
@@ -338,9 +332,10 @@ nav ul li a:hover {
   border-radius: 10px;
   padding: 5px;
   width: 50%;
+  margin-top: 10px;
   align-items: center;
   justify-content: center;
-  margin-left: 18%;
+  margin-left: 25%;
 }
 @media screen and (max-width: 830px) {
   .main .cards .all-cards .card1,
@@ -356,7 +351,7 @@ nav ul li a:hover {
   .main .cards .all-cards .card11,
   .main .cards .all-cards .card12 {
     position: relative;
-    width: 180px;
+    width: 170px;
     height: 250px;
     overflow: hidden;
     border-radius: 20px 0px 20px 0px;
@@ -439,6 +434,7 @@ th {
 @media screen and (max-width: 830px) {
   .schedule {
     width: 100%;
+    margin-left: 20px;
   }
   .table {
     font-size: 48%;
@@ -472,73 +468,73 @@ th {
 }
 
 .card1 {
-  background: url(../../shopfood.jpg);
+  background: url(../images/shopfood.jpg);
   background-size: 100% 160px;
   background-repeat: no-repeat;
 }
 
 .card2 {
-  background: url(../../SomlorBrher.png);
+  background: url(../images/SomlorBrher.png);
   background-size: 100% 160px;
   background-repeat: no-repeat;
 }
 
 .card3 {
-  background: url(../../SomlorBroleth.png);
+  background: url(../images/SomlorBroleth.png);
   background-size: 100% 160px;
   background-repeat: no-repeat;
 }
 
 .card4 {
-  background: url(../../namngov.png);
+  background: url(../images/namngov.png);
   background-size: 100% 160px;
   background-repeat: no-repeat;
 }
 
 .card5 {
-  background: url(../../Sngor-spey.png);
+  background: url(../images/Sngor-spey.png);
   background-size: 100% 160px;
   background-repeat: no-repeat;
 }
 
 .card6 {
-  background: url(../../taoho.png);
+  background: url(../images/taoho.png);
   background-size: 100% 160px;
   background-repeat: no-repeat;
 }
 
 .card7 {
-  background: url(../../Tik-krerng.jpg);
+  background: url(../images/Tik-krerng.jpg);
   background-size: 100% 160px;
   background-repeat: no-repeat;
 }
 
 .card8 {
-  background: url(../../Fry-corn.avif);
+  background: url(../images/Fry-corn.avif);
   background-size: 100% 160px;
   background-repeat: no-repeat;
 }
 
 .card9 {
-  background: url(../../korko.png);
+  background: url(../images/korko.png);
   background-size: 100% 160px;
   background-repeat: no-repeat;
 }
 
 .card10 {
-  background: url(../../Khor.png);
+  background: url(../images/Khor.png);
   background-size: 100% 160px;
   background-repeat: no-repeat;
 }
 
 .card11 {
-  background: url(../../nhom.jpg);
+  background: url(../images/char-misur.jpg);
   background-size: 100% 160px;
   background-repeat: no-repeat;
 }
 
 .card12 {
-  background: url(../../cha-sondekkur.jpg);
+  background: url(../images/cha-sondekkur.jpg);
   background-size: 100% 160px;
   background-repeat: no-repeat;
 }/*# sourceMappingURL=about-us.css.map */
