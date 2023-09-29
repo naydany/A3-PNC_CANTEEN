@@ -143,15 +143,6 @@
             
         }
     }
-    @include responsive ('mobile') {
-        .schedule{
-            display: flex;
-            flex-direction: column;
-            width: auto;
-            height: auto;
-        }
-        
-    }
 
     .cards {
         display: flex;
@@ -165,14 +156,6 @@
             align-self: self-start;
             margin-left: 70px;
             margin-top: 10px;
-        }
-        @include responsive ('mobile'){
-            .best-food{
-                display: flex;
-                justify-content: start;
-                margin-left: 30px;
-
-            }            
         }
 
         .all-cards {
@@ -268,35 +251,12 @@
                 .card11,
                 .card12 {
                     position: relative;
-                    width: 170px;
+                    width: 180px;
                     height: 250px;
                     overflow: hidden;
                     border-radius: 20px 0px 20px 0px;
                     border: 1px solid;
                 }
-            }
-            @include responsive ('mobile'){
-                
-                .card1,
-                .card2,
-                .card3,
-                .card4,
-                .card5,
-                .card6,
-                .card7,
-                .card8,
-                .card9,
-                .card10,
-                .card11,
-                .card12 {
-                    position: relative;
-                    width: 230px;
-                    height: 250px;
-                    overflow: hidden;
-                    border-radius: 20px 0px 20px 0px;
-                    border: 1px solid;
-                }
-                
             }
 
                 .card1:hover .card_content,
@@ -332,9 +292,12 @@
             }
 
         }
-        @include responsive ('mobile'){
+
+        @include responsive ('tablet'){
             .all-cards{
                 width: 95%;
+                margin-left: 10px;
+
 
             }            
         }
@@ -359,27 +322,17 @@
         color: white;
     }
 
-    @include responsive ('tablet') {
+    @include responsive ('tablet'){
         .schedule {
             width: 100%;
-            margin-left: 20px;
-
         }
 
         .table {
             font-size: 48%;
             margin-bottom: 20px;
-            margin-left: 0;
+            margin-left: 0px;
         }
 
-    }
-    @include responsive ('mobile'){
-        .table{
-            width: 100%;
-            align-items: center;
-            margin: 20px;
-        }
-        
     }
     .table th,
     .table td {

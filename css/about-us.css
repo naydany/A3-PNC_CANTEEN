@@ -184,14 +184,6 @@ nav ul li a:hover {
     height: auto;
   }
 }
-@media screen and (max-width: 600px) {
-  .main .schedule {
-    display: flex;
-    flex-direction: column;
-    width: auto;
-    height: auto;
-  }
-}
 .main .cards {
   display: flex;
   align-items: center;
@@ -204,13 +196,6 @@ nav ul li a:hover {
   align-self: self-start;
   margin-left: 70px;
   margin-top: 10px;
-}
-@media screen and (max-width: 600px) {
-  .main .cards .best-food {
-    display: flex;
-    justify-content: start;
-    margin-left: 30px;
-  }
 }
 .main .cards .all-cards {
   display: flex;
@@ -351,28 +336,7 @@ nav ul li a:hover {
   .main .cards .all-cards .card11,
   .main .cards .all-cards .card12 {
     position: relative;
-    width: 170px;
-    height: 250px;
-    overflow: hidden;
-    border-radius: 20px 0px 20px 0px;
-    border: 1px solid;
-  }
-}
-@media screen and (max-width: 600px) {
-  .main .cards .all-cards .card1,
-  .main .cards .all-cards .card2,
-  .main .cards .all-cards .card3,
-  .main .cards .all-cards .card4,
-  .main .cards .all-cards .card5,
-  .main .cards .all-cards .card6,
-  .main .cards .all-cards .card7,
-  .main .cards .all-cards .card8,
-  .main .cards .all-cards .card9,
-  .main .cards .all-cards .card10,
-  .main .cards .all-cards .card11,
-  .main .cards .all-cards .card12 {
-    position: relative;
-    width: 230px;
+    width: 180px;
     height: 250px;
     overflow: hidden;
     border-radius: 20px 0px 20px 0px;
@@ -408,9 +372,10 @@ nav ul li a:hover {
   opacity: 1;
   transition-delay: 0.25s;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 830px) {
   .main .all-cards {
     width: 95%;
+    margin-left: 10px;
   }
 }
 
@@ -434,19 +399,11 @@ th {
 @media screen and (max-width: 830px) {
   .schedule {
     width: 100%;
-    margin-left: 20px;
   }
   .table {
     font-size: 48%;
     margin-bottom: 20px;
-    margin-left: 0;
-  }
-}
-@media screen and (max-width: 600px) {
-  .table {
-    width: 100%;
-    align-items: center;
-    margin: 20px;
+    margin-left: 0px;
   }
 }
 .table th,
