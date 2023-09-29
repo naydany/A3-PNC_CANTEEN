@@ -23,6 +23,12 @@
                 color: #dfc74a;
             }
         }
+        @include responsive ('tablet'){
+            .h2-container1{
+                width: 48%;
+                margin-left: 25px;
+            }
+        }
 
         .p-container1 {
             width: 90%;
@@ -37,7 +43,12 @@
             justify-content: center;
         }
     }
-
+    @include responsive ('tablet'){
+        .container1{
+            width: 100%;
+            margin-left: 35px;
+        }
+    }
     .container2 {
         display: flex;
         align-items: center;
@@ -48,6 +59,12 @@
             text-transform: uppercase;
             color: #dfc74a;
             border-bottom: double black;
+        }
+        @include responsive ('tablet'){
+            .h2-container2{
+                width: 34%;
+                margin-left: 80px;
+            }
         }
     }
     @include responsive ('mobile'){
@@ -86,8 +103,10 @@
 
                 @include responsive ('tablet') {
                     .text {
-                        width: 60%;
+                        width: 80%;
                         text-align: justify;
+                        margin-top: 35px;
+                        margin-left: 0px;
                     }
                 }
 
@@ -106,8 +125,10 @@
 
                 @include responsive ('tablet') {
                     .price {
-                        width: 100px;
-                        margin-left: 20px;
+                        width: 80px;
+                        border-radius: 100%;
+                        padding: 10px;
+                        margin-left: 30px;
 
                     }
                 }
@@ -143,7 +164,6 @@
             
         }
     }
-
     .cards {
         display: flex;
         align-items: center;
@@ -251,7 +271,7 @@
                 .card11,
                 .card12 {
                     position: relative;
-                    width: 180px;
+                    width: 200px;
                     height: 250px;
                     overflow: hidden;
                     border-radius: 20px 0px 20px 0px;
@@ -296,7 +316,10 @@
         @include responsive ('tablet'){
             .all-cards{
                 width: 95%;
-                margin-left: 10px;
+                margin-left: 100px;
+                justify-content: center;
+                align-items: center;
+                display: flex;
 
 
             }            
