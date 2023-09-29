@@ -20,7 +20,13 @@
 
             b {
                 font-size: 40px;
-                color: #dfc74a;
+                color:$mainBrandColor;
+            }
+        }
+        @include responsive ('tablet'){
+            .h2-container1{
+                width: 48%;
+                margin-left: 25px;
             }
         }
 
@@ -37,7 +43,12 @@
             justify-content: center;
         }
     }
-
+    @include responsive ('tablet'){
+        .container1{
+            width: 100%;
+            margin-left: 35px;
+        }
+    }
     .container2 {
         display: flex;
         align-items: center;
@@ -46,8 +57,14 @@
 
         .h2-container2 {
             text-transform: uppercase;
-            color: #dfc74a;
-            border-bottom: double black;
+            color:$mainBrandColor;
+            border-bottom: double $thirdcolor;
+        }
+        @include responsive ('tablet'){
+            .h2-container2{
+                width: 34%;
+                margin-left: 80px;
+            }
         }
     }
     @include responsive ('mobile'){
@@ -74,7 +91,7 @@
                 display: flex;
                 flex-direction: column;
                 width: 50%;
-                color: white;
+                color:$neutral;
 
                 .text {
                     background-image: linear-gradient(1deg, rgba(14, 10, 10, 0.3), #1f1c1c);
@@ -86,8 +103,10 @@
 
                 @include responsive ('tablet') {
                     .text {
-                        width: 60%;
+                        width: 80%;
                         text-align: justify;
+                        margin-top: 35px;
+                        margin-left: 0px;
                     }
                 }
 
@@ -96,7 +115,7 @@
                     text-align: center;
                     justify-content: center;
                     background-image: linear-gradient(1deg, rgba(14, 10, 10, 0.3), #2e2e2de8);
-                    color: #dfc74a;
+                    color:$mainBrandColor;
                     margin-left: 15%;
                     margin-top: 20px;
                     width: 200px;
@@ -106,8 +125,10 @@
 
                 @include responsive ('tablet') {
                     .price {
-                        width: 100px;
-                        margin-left: 20px;
+                        width: 80px;
+                        border-radius: 100%;
+                        padding: 10px;
+                        margin-left: 30px;
 
                     }
                 }
@@ -143,16 +164,6 @@
             
         }
     }
-    @include responsive ('mobile') {
-        .schedule{
-            display: flex;
-            flex-direction: column;
-            width: auto;
-            height: auto;
-        }
-        
-    }
-
     .cards {
         display: flex;
         align-items: center;
@@ -161,18 +172,10 @@
         margin-top: 20px;
 
         .best-food {
-            border-bottom: 2px solid black;
+            border-bottom: 2px solid $thirdcolor;
             align-self: self-start;
             margin-left: 70px;
             margin-top: 10px;
-        }
-        @include responsive ('mobile'){
-            .best-food{
-                display: flex;
-                justify-content: start;
-                margin-left: 30px;
-
-            }            
         }
 
         .all-cards {
@@ -238,7 +241,7 @@
                     }
 
                     .prices {
-                        background: gold;
+                        background: $mainBrandColor;
                         border: none;
                         border-radius: 10px;
                         padding: 5px;
@@ -268,35 +271,12 @@
                 .card11,
                 .card12 {
                     position: relative;
-                    width: 170px;
+                    width: 200px;
                     height: 250px;
                     overflow: hidden;
                     border-radius: 20px 0px 20px 0px;
                     border: 1px solid;
                 }
-            }
-            @include responsive ('mobile'){
-                
-                .card1,
-                .card2,
-                .card3,
-                .card4,
-                .card5,
-                .card6,
-                .card7,
-                .card8,
-                .card9,
-                .card10,
-                .card11,
-                .card12 {
-                    position: relative;
-                    width: 230px;
-                    height: 250px;
-                    overflow: hidden;
-                    border-radius: 20px 0px 20px 0px;
-                    border: 1px solid;
-                }
-                
             }
 
                 .card1:hover .card_content,
@@ -332,9 +312,15 @@
             }
 
         }
-        @include responsive ('mobile'){
+
+        @include responsive ('tablet'){
             .all-cards{
                 width: 95%;
+                margin-left: 100px;
+                justify-content: center;
+                align-items: center;
+                display: flex;
+
 
             }            
         }
@@ -345,7 +331,7 @@
     .table,
     td,
     th {
-        border: 1px solid white;
+        border: 1px solid$neutral;
         text-align: left;
     }
 
@@ -356,30 +342,20 @@
         width: 100%;
         font-size: 12px;
         background-image: linear-gradient(1deg, rgba(38, 37, 37, 0.3), #1c1b1b);
-        color: white;
+        color:$neutral;
     }
 
-    @include responsive ('tablet') {
+    @include responsive ('tablet'){
         .schedule {
             width: 100%;
-            margin-left: 20px;
-
         }
 
         .table {
             font-size: 48%;
             margin-bottom: 20px;
-            margin-left: 0;
+            margin-left: 0px;
         }
 
-    }
-    @include responsive ('mobile'){
-        .table{
-            width: 100%;
-            align-items: center;
-            margin: 20px;
-        }
-        
     }
     .table th,
     .table td {
