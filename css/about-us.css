@@ -295,7 +295,7 @@ nav ul li a:hover {
   font-size: 12px;
   margin-bottom: 10px;
   text-align: justify;
-  width: 85%;
+  width: 100%;
 }
 .main .cards .all-cards .card1 .card_content .card_description,
 .main .cards .all-cards .card2 .card_content .card_description,
@@ -310,7 +310,7 @@ nav ul li a:hover {
 .main .cards .all-cards .card11 .card_content .card_description,
 .main .cards .all-cards .card12 .card_content .card_description {
   font-size: 12px;
-  width: 85%;
+  width: 100%;
   text-align: justify;
   opacity: 0;
   transition: opacity 0.5s;
@@ -332,9 +332,10 @@ nav ul li a:hover {
   border-radius: 10px;
   padding: 5px;
   width: 50%;
+  margin-top: 10px;
   align-items: center;
   justify-content: center;
-  margin-left: 18%;
+  margin-left: 25%;
 }
 @media screen and (max-width: 830px) {
   .main .cards .all-cards .card1,
@@ -350,7 +351,7 @@ nav ul li a:hover {
   .main .cards .all-cards .card11,
   .main .cards .all-cards .card12 {
     position: relative;
-    width: 180px;
+    width: 170px;
     height: 250px;
     overflow: hidden;
     border-radius: 20px 0px 20px 0px;
