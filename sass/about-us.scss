@@ -115,16 +115,19 @@ body{
     .schedule {
         background: url(../images/pnc-canteen.png);
         background-repeat: no-repeat;
-        background-size: 95% 100%;
+        background-size: 95% ;
+        height: 95vh;
         margin-left: 70px;
         margin-top: 20px;
 
         .content-schedule {
             display: flex;
             align-items: center;
-            background: rgba(61, 140, 137, 0.398);
+            background: rgba(124, 71, 173, 0.245);
             padding: 0px 0px 50px 0px;
             width: 95%;
+            border: 2px solid blue;
+            height: 100%;
 
             .text-schedule {
                 display: flex;
@@ -136,7 +139,7 @@ body{
                     background-image: linear-gradient(1deg, rgba(14, 10, 10, 0.3), #1f1c1c);
                     width: 90%;
                     padding: 30px;
-                    margin-bottom: 45px;
+                    margin-top: -105px;
                     border-radius: 0px 0px 20px 0px;
                 }
 
@@ -153,13 +156,15 @@ body{
                     display: flex;
                     text-align: center;
                     justify-content: center;
+                    font-weight: bold;
                     background-image: linear-gradient(1deg, rgba(14, 10, 10, 0.3), #2e2e2de8);
                     color:$mainBrandColor;
                     margin-left: 15%;
-                    margin-top: 20px;
+                    margin-top: 100px;
                     width: 200px;
-                    padding: 10px;
+                    padding: 30px 10px 30px 10px;
                     border-radius: 100px;
+
                 }
 
                 @include responsive ('tablet') {
@@ -505,7 +510,8 @@ body{
 
     .table th,
     .table td {
-        padding: 15px;
+        padding: 30px 5px 30px 5px;
+
     }
 
     .table th {
