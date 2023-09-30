@@ -362,6 +362,22 @@ body {
   border-bottom: double;
   line-height: 15px;
 }
+@media screen and (max-width: 600px) {
+  .main .cards .all-cards .card1 .card_content .card_title,
+  .main .cards .all-cards .card2 .card_content .card_title,
+  .main .cards .all-cards .card3 .card_content .card_title,
+  .main .cards .all-cards .card4 .card_content .card_title,
+  .main .cards .all-cards .card5 .card_content .card_title,
+  .main .cards .all-cards .card6 .card_content .card_title,
+  .main .cards .all-cards .card7 .card_content .card_title,
+  .main .cards .all-cards .card8 .card_content .card_title,
+  .main .cards .all-cards .card9 .card_content .card_title,
+  .main .cards .all-cards .card10 .card_content .card_title,
+  .main .cards .all-cards .card11 .card_content .card_title,
+  .main .cards .all-cards .card12 .card_content .card_title {
+    font-size: 14px;
+  }
+}
 .main .cards .all-cards .card1 .card_content .card_subtitle,
 .main .cards .all-cards .card2 .card_content .card_subtitle,
 .main .cards .all-cards .card3 .card_content .card_subtitle,
