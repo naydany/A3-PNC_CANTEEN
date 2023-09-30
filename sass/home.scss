@@ -39,7 +39,7 @@ header {
         text-align: justify;
     }
 
-    @include tablet {
+    @include responsive('tablet') {
         .content-par {
             padding-left: 40px;
             padding-top: 40px;

@@ -13,7 +13,7 @@
             padding-left: 3vh;
         }
         @include tablet {
-            .logo-pnc img {
+            img {
                 height: 25%;
             }
         }
@@ -90,7 +90,7 @@
             padding-left: 7%;
         }
         @include mobile {
-            .socail-media p {
+            p {
                 padding-left: 11%;
             }
         }

@@ -23,6 +23,12 @@ nav .logo h1 {
   font-weight: bold;
   color: white;
 }
+@media screen and (max-width: 830px) {
+  nav .logo {
+    width: 30%;
+    margin-left: 40px;
+  }
+}
 nav ul {
   width: 50%;
   display: flex;
@@ -40,10 +46,6 @@ nav ul li a:hover {
   padding: 35px 10px 35px 10px;
 }
 @media screen and (max-width: 830px) {
-  nav .logo {
-    width: 30%;
-    margin-left: 40px;
-  }
   nav ul {
     width: 70%;
     margin-left: 10px;
