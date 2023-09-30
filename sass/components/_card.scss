@@ -1,9 +1,9 @@
 @import"group-mixin";
 @import"vairiable";
-@import"media-queries";
+@import"responsive";
 
 .content-cards {
-    height: 100vh;
+    height: 620px;
     background-color: rgba(0, 0, 0, 0.086);
 
     h3 {
@@ -138,7 +138,7 @@
             // }
         }
 
-        @include tablet {
+        @include responsive('tablet') {
 
             .content-card1,
             .content-card2,
@@ -176,7 +176,7 @@
             }
         }
 
-        @include tablet {
+        @include responsive('tablet') {
             .content-card1:hover,
             .content-card2:hover,
             .content-card3:hover,
@@ -190,7 +190,7 @@
 
     }
 
-    @include tablet {
+    @include responsive('tablet') {
 
         .content-card7,
         .content-card8 {
@@ -207,8 +207,8 @@
 
 }
 
-// @include tablet{
-//     .content-cards{
-//         height: 55vh;
-//     }
-// }
+@include responsive('tablet'){
+    .content-cards{
+        height: 870px;
+    }
+}

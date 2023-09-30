@@ -6,7 +6,7 @@ header {
     width: 100%;
     padding-top: 15vh;
     color: $neutral;
-    height: 100vh;
+    height: 620px;
     background-image: url(../images/photo_2023-09-24_10-59-29.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -50,7 +50,7 @@ header {
         }
     }
 
-    @include tablet {
+    @include responsive('tablet') {
         .content-par {
             width: 70%;
         }
@@ -111,7 +111,7 @@ header {
             }
         }
 
-        @include tablet {
+        @include responsive('tablet') {
             .box-content1 {
                 height: 320px;
                 width: 49%;
@@ -123,12 +123,12 @@ header {
             }
         }
 
-        @include tablet {
+        @include responsive('tablet') {
             margin-top: 120px;
         }
     }
 
-    @include tablet {
+    @include responsive('tablet') {
         .box-header {
             margin-left: 40px;
         }
@@ -174,7 +174,7 @@ header {
             }
         }
 
-        @include tablet {
+        @include responsive('tablet') {
             .speaker1 {
                 width: 40%;
                 height: 40px;
@@ -202,7 +202,7 @@ header {
             margin-top: 80px;
             color: white;
         }
-        @include tablet{
+        @include responsive('tablet'){
             .para{
                 margin-top: 200px;
             }

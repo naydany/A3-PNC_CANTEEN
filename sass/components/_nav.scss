@@ -1,5 +1,6 @@
 @import"vairiable";
-@import "media-queries";
+// @import "media-queries";
+@import"responsive";
 nav {
     color: $neutral;
     height: 15vh;
@@ -27,7 +28,12 @@ nav {
         }
     } 
   
-
+    @include responsive('tablet'){
+        .logo{
+            width: 30%;
+            margin-left: 40px;
+        }
+    }
     ul {
         width: 50%;
         display: flex;
@@ -48,12 +54,7 @@ nav {
             }
         }
     }
-
-    @include tablet{
-        .logo{
-            width: 30%;
-            margin-left: 40px;
-        }
+    @include responsive('tablet'){
         ul{
             width: 70%;
             margin-left: 10px;
