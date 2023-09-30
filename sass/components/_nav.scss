@@ -42,15 +42,11 @@ nav {
         margin-right: 60px;
         li {
             a {
-                // font-style: italic;
                 color: $neutral;
                 padding: 10px;
             }
             a:hover{
-                border-bottom: 2px solid red;
-                // color: red;
                 background-color: black;
-                padding: 35px 10px 35px 10px;
             }
         }
     }
@@ -61,6 +57,9 @@ nav {
             display: flex;
         }
     }
-
-
+}
+.Active,
+.about,
+.contact{
+    background-color: black;
 }

@@ -40,9 +40,7 @@ nav ul li a {
   padding: 10px;
 }
 nav ul li a:hover {
-  border-bottom: 2px solid red;
   background-color: black;
-  padding: 35px 10px 35px 10px;
 }
 @media screen and (max-width: 830px) {
   nav ul {
@@ -50,6 +48,12 @@ nav ul li a:hover {
     margin-left: 10px;
     display: flex;
   }
+}
+
+.Active,
+.about,
+.contact {
+  background-color: black;
 }
 
 * {
