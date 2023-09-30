@@ -1,5 +1,5 @@
 @import "vairiable";
-
+@import "responsive";
 .footer {
     width: 20%;
     height: 100vh;
@@ -19,14 +19,14 @@
         }
     }
 
-    @include tablet {
+    @include responsive('tablet') {
         .logo-pnc {
             height: 100%;
             width: 25%;
         }
     }
 
-    @include mobile {
+    @include responsive('mobile') {
         .logo-pnc {
             display: none;
         }
@@ -36,7 +36,7 @@
         padding-top: 3vh;
     }
     
-    @include tablet {
+    @include responsive('tablet') {
         .time-ate {
             width: 25%;
             height: 100%;
@@ -44,7 +44,7 @@
         }
     }
     
-    @include mobile {
+    @include responsive('mobile') {
         .time-ate {
             display: none;
         }
@@ -54,7 +54,7 @@
         padding-top: 4vh;
     }
     
-    @include tablet {
+    @include responsive('tablet') {
         .name-food {
             height: 100%;
             width: 25%;
@@ -62,7 +62,7 @@
         }
     }
     
-    @include mobile {
+    @include responsive('mobile') {
         .name-food {
             display: none;
         }
@@ -75,13 +75,13 @@
             font-size: 30px;
             color: $secondary;
         }
-        @include tablet {
+        @include responsive('tablet'){
             .socail-media i {
                 padding: 0% 0% 0% 3%;
             }
         }
         
-        @include mobile {
+        @include responsive('mobile') {
             .socail-media i {
                 padding: 8% 0% 0% 5%;
             }
@@ -89,14 +89,19 @@
         p {
             padding-left: 7%;
         }
+<<<<<<< HEAD
+        @include responsive('mobile') {
+            .socail-media p {
+=======
         @include mobile {
             p {
+>>>>>>> 7664513d9cb95fc0c533f099af762569876056d5
                 padding-left: 11%;
             }
         }
     }
     
-    @include tablet {
+    @include responsive('tablet') {
         .socail-media {
             height: 100%;
             width: 25%;
@@ -104,7 +109,7 @@
         }
     }
     
-    @include mobile {
+    @include responsive('mobile') {
         .socail-media {
             width: 90%;
             height: 50%;
@@ -112,7 +117,7 @@
     }
 }
 
-@include tablet {
+@include responsive('tablet') {
     .footer {
         display: flex;
         height: 30vh;
@@ -123,7 +128,7 @@
     }
 }
 
-@include mobile {
+@include responsive('mobile') {
     .footer {
         padding-left: 12vh;
         padding-top: 2vh;

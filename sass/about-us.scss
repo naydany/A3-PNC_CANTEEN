@@ -260,8 +260,9 @@ body{
             align-items: center;
             justify-content: center;
             flex-wrap: wrap;
-            gap: 70px;
-            width: 98%;
+            gap: 65px;
+            width: 100%;
+            margin-left: 6px;
             margin-top: 50px;
 
             .card1,
@@ -298,6 +299,11 @@ body{
                         font-weight: bold;
                         border-bottom: double;
                         line-height: 15px;
+                    }
+                    @include responsive('mobile'){
+                        .card_title{
+                            font-size: 14px;
+                        }
                     }
 
                     .card_subtitle {
