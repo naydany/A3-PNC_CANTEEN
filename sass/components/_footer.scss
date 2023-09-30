@@ -12,13 +12,8 @@
             height: 50%;
             padding-left: 3vh;
         }
-<<<<<<< HEAD
-        @include responsive('tablet'){
-            .logo-pnc img {
-=======
         @include tablet {
             img {
->>>>>>> 7664513d9cb95fc0c533f099af762569876056d5
                 height: 25%;
             }
         }
