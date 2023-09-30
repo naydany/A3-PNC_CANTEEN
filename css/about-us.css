@@ -63,6 +63,27 @@ nav ul li a:hover {
   list-style: none;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 600px) {
+  .li_navbar,
+  .logo > span {
+    font-size: 12px;
+  }
+  .logo > img {
+    margin-left: -40px;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  .li_navbar {
+    margin-right: 5px;
+  }
+}
 .main {
   width: 100%;
   display: flex;
@@ -91,16 +112,27 @@ nav ul li a:hover {
     margin-left: 25px;
   }
 }
+@media screen and (max-width: 600px) {
+  .main .container1 .h2-container1 {
+    width: 51%;
+    font-size: 15px;
+  }
+}
 .main .container1 .p-container1 {
   width: 90%;
   margin: 20px;
   text-align: justify;
 }
 @media screen and (max-width: 600px) {
+  .main .container1 .p-container1 {
+    width: 98%;
+    font-size: 15px;
+    margin-left: 0px;
+  }
+}
+@media screen and (max-width: 600px) {
   .main .container1 {
     width: 100%;
-    align-items: center;
-    justify-content: center;
   }
 }
 @media screen and (max-width: 830px) {
@@ -127,8 +159,14 @@ nav ul li a:hover {
   }
 }
 @media screen and (max-width: 600px) {
+  .main .container2 .h2-container2 {
+    width: 46%;
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 600px) {
   .main .container2 {
-    width: auto;
+    width: 100%;
     align-items: center;
   }
 }
@@ -177,7 +215,7 @@ nav ul li a:hover {
   margin-top: 20px;
   width: 200px;
   padding: 10px;
-  border-radius: 1000px;
+  border-radius: 100px;
 }
 @media screen and (max-width: 830px) {
   .main .schedule .content-schedule .text-schedule .price {
@@ -185,6 +223,14 @@ nav ul li a:hover {
     border-radius: 100%;
     padding: 10px;
     margin-left: 30px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .main .schedule .content-schedule .text-schedule .price {
+    width: 60px;
+    border-radius: 100px;
+    margin-top: -20px;
+    margin-left: 9px;
   }
 }
 @media screen and (max-width: 830px) {
@@ -197,18 +243,39 @@ nav ul li a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: row;
     width: 100%;
-    margin-left: 40px;
-    font-size: 16px;
-    margin-bottom: 20px;
+    margin-top: -35px;
+    margin-left: -20px;
+    font-size: 10px;
+    padding: 0px;
   }
 }
 @media screen and (max-width: 600px) {
   .main .schedule .content-schedule {
     display: flex;
     flex-direction: column;
-    width: 95%;
-    height: auto;
+    width: 100%;
+    height: 38vh;
+  }
+}
+@media screen and (max-width: 830px) {
+  .main .schedule {
+    width: 100%;
+  }
+  .main .table {
+    font-size: 48%;
+    margin-bottom: 20px;
+    margin-left: 0px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .main .schedule {
+    display: flex;
+    flex-direction: column;
+    background-size: 99%;
+    justify-content: center;
+    margin-left: 25px;
   }
 }
 .main .cards {
@@ -223,6 +290,11 @@ nav ul li a:hover {
   align-self: self-start;
   margin-left: 70px;
   margin-top: 10px;
+}
+@media screen and (max-width: 600px) {
+  .main .cards .best-food {
+    margin-left: 30px;
+  }
 }
 .main .cards .all-cards {
   display: flex;
@@ -370,6 +442,56 @@ nav ul li a:hover {
     border: 1px solid;
   }
 }
+@media screen and (max-width: 600px) {
+  .main .cards .all-cards .card1,
+  .main .cards .all-cards .card2,
+  .main .cards .all-cards .card3,
+  .main .cards .all-cards .card4,
+  .main .cards .all-cards .card5,
+  .main .cards .all-cards .card6,
+  .main .cards .all-cards .card7,
+  .main .cards .all-cards .card8,
+  .main .cards .all-cards .card9,
+  .main .cards .all-cards .card10,
+  .main .cards .all-cards .card11,
+  .main .cards .all-cards .card12 {
+    position: relative;
+    width: 192px;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 20px 0px 20px 0px;
+    border: 1px solid;
+  }
+  .main .cards .all-cards .card2,
+  .main .cards .all-cards .card4,
+  .main .cards .all-cards .card6,
+  .main .cards .all-cards .card8,
+  .main .cards .all-cards .card10,
+  .main .cards .all-cards .card12 {
+    position: relative;
+    width: 192px;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 20px 0px 20px 0px;
+    border: 1px solid;
+    margin-right: -53px;
+  }
+  .main .cards .all-cards .card1,
+  .main .cards .all-cards .card3,
+  .main .cards .all-cards .card5,
+  .main .cards .all-cards .card7,
+  .main .cards .all-cards .card9,
+  .main .cards .all-cards .card11 {
+    position: relative;
+    width: 192px;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 20px 0px 20px 0px;
+    border: 1px solid;
+    margin-left: -6px;
+    margin-right: 10px;
+  }
+}
 .main .cards .all-cards .card1:hover .card_content,
 .main .cards .all-cards .card2:hover .card_content,
 .main .cards .all-cards .card3:hover .card_content,
@@ -408,6 +530,15 @@ nav ul li a:hover {
     display: flex;
   }
 }
+@media screen and (max-width: 600px) {
+  .main .all-cards {
+    width: 90%;
+    margin-left: 0px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+}
 
 .table,
 td,
@@ -426,14 +557,15 @@ th {
   color: white;
 }
 
-@media screen and (max-width: 830px) {
-  .schedule {
-    width: 100%;
-  }
+@media screen and (max-width: 600px) {
   .table {
-    font-size: 48%;
-    margin-bottom: 20px;
-    margin-left: 0px;
+    width: 90%;
+    font-size: 2px;
+    margin-right: 0px;
+    margin-top: -45px;
+  }
+  tr:nth-of-type(5) {
+    display: none;
   }
 }
 .table th,
