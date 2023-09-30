@@ -41,9 +41,7 @@ nav ul li a {
   padding: 10px;
 }
 nav ul li a:hover {
-  border-bottom: 2px solid red;
   background-color: black;
-  padding: 35px 10px 35px 10px;
 }
 @media screen and (max-width: 830px) {
   nav ul {
@@ -51,6 +49,12 @@ nav ul li a:hover {
     margin-left: 10px;
     display: flex;
   }
+}
+
+.Active,
+.about,
+.contact {
+  background-color: black;
 }
 
 * {
@@ -427,7 +431,7 @@ header .content-par {
 @media screen and (max-width: 830px) {
   header .content-par {
     padding-left: 40px;
-    padding-top: 40px;
+    padding-top: 10px;
   }
   header h3 {
     padding: 80px 0 30px 40px;
@@ -487,17 +491,12 @@ header .box-header .box-content2 h5 {
 }
 @media screen and (max-width: 830px) {
   header .box-header .box-content1 {
-    height: 320px;
+    height: 300px;
     width: 49%;
   }
   header .box-header .box-content2 {
-    height: 320px;
+    height: 300px;
     width: 49%;
-  }
-}
-@media screen and (max-width: 830px) {
-  header .box-header {
-    margin-top: 120px;
   }
 }
 @media screen and (max-width: 830px) {
@@ -506,6 +505,11 @@ header .box-header .box-content2 h5 {
   }
 }
 
+@media screen and (max-width: 830px) {
+  header {
+    height: 700px;
+  }
+}
 .container .pic-content {
   height: 80vh;
   background-image: url(/images/student-image.jpg);
