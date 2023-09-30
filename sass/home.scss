@@ -4,7 +4,7 @@
 
 header {
     width: 100%;
-    padding-top: 15vh;
+    padding-top: 18vh;
     color: $neutral;
     height: 620px;
     background-image: url(../images/photo_2023-09-24_10-59-29.jpg);
@@ -20,7 +20,7 @@ header {
     }
 
     h3 {
-        padding: 50px 0 30px 60px;
+        padding: 60px 0 30px 60px;
 
         .bold {
             font-size: 25px;
@@ -113,12 +113,12 @@ header {
 
         @include responsive('tablet') {
             .box-content1 {
-                height: 300px;
+                height: 280px;
                 width: 49%;
             }
 
             .box-content2 {
-                height: 300px;
+                height: 280px;
                 width: 49%;
             }
         }
@@ -137,7 +137,7 @@ header {
 }
 @include responsive('tablet'){
     header{
-        height: 700px;
+        height: 780px;
     }
 }
 .container {
