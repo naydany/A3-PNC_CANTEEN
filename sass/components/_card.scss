@@ -49,6 +49,16 @@
             .card-image1 {
                 @include cencered;
                 background-image: url(/images/Tik-krerng.jpg);
+                button{
+                    transform: translateY(120px);
+                    margin-left: 20px;
+                    height: 35px;
+                    width: 70px;
+                }
+                button:hover{
+                    opacity: 0;
+                    
+                }
             }
 
             .card1 {
@@ -58,7 +68,6 @@
                 transform: translateY(-200px);
                 opacity: 0;
                 transition: 0.3s;
-
                 h4 {
                     margin-bottom: 10px;
                     display: flex;

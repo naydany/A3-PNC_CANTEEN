@@ -55,6 +55,11 @@ header {
             width: 70%;
         }
     }
+    @include responsive('mobile') {
+        .content-par {
+            width: 90%;
+        }
+    }
 
     .box-header {
         display: flex;

@@ -201,6 +201,29 @@ label #cancel {
   box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.464);
   background-image: url(/images/Tik-krerng.jpg);
 }
+.content-cards .cards .content-card1 .card-image1 button,
+.content-cards .cards .content-card2 .card-image1 button,
+.content-cards .cards .content-card3 .card-image1 button,
+.content-cards .cards .content-card4 .card-image1 button,
+.content-cards .cards .content-card5 .card-image1 button,
+.content-cards .cards .content-card6 .card-image1 button,
+.content-cards .cards .content-card7 .card-image1 button,
+.content-cards .cards .content-card8 .card-image1 button {
+  transform: translateY(120px);
+  margin-left: 20px;
+  height: 35px;
+  width: 70px;
+}
+.content-cards .cards .content-card1 .card-image1 button:hover,
+.content-cards .cards .content-card2 .card-image1 button:hover,
+.content-cards .cards .content-card3 .card-image1 button:hover,
+.content-cards .cards .content-card4 .card-image1 button:hover,
+.content-cards .cards .content-card5 .card-image1 button:hover,
+.content-cards .cards .content-card6 .card-image1 button:hover,
+.content-cards .cards .content-card7 .card-image1 button:hover,
+.content-cards .cards .content-card8 .card-image1 button:hover {
+  opacity: 0;
+}
 .content-cards .cards .content-card1 .card1,
 .content-cards .cards .content-card2 .card1,
 .content-cards .cards .content-card3 .card1,
@@ -503,6 +526,11 @@ header .content-par {
 @media screen and (max-width: 830px) {
   header .content-par {
     width: 70%;
+  }
+}
+@media screen and (max-width: 600px) {
+  header .content-par {
+    width: 90%;
   }
 }
 header .box-header {
