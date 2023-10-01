@@ -272,7 +272,7 @@ label #cancel {
   .content-cards .cards .content-card8 .card1 .quality img {
     width: 30px;
     height: 30px;
-    margin-top: 12px;
+    margin-top: 8px;
   }
 }
 .content-cards .cards .content-card1 .card1 .quality .price,
@@ -284,6 +284,18 @@ label #cancel {
 .content-cards .cards .content-card7 .card1 .quality .price,
 .content-cards .cards .content-card8 .card1 .quality .price {
   margin-top: 20px;
+}
+@media screen and (max-width: 600px) {
+  .content-cards .cards .content-card1 .card1 .quality .price,
+  .content-cards .cards .content-card2 .card1 .quality .price,
+  .content-cards .cards .content-card3 .card1 .quality .price,
+  .content-cards .cards .content-card4 .card1 .quality .price,
+  .content-cards .cards .content-card5 .card1 .quality .price,
+  .content-cards .cards .content-card6 .card1 .quality .price,
+  .content-cards .cards .content-card7 .card1 .quality .price,
+  .content-cards .cards .content-card8 .card1 .quality .price {
+    margin-top: 15px;
+  }
 }
 .content-cards .cards .content-card1 .card-image2,
 .content-cards .cards .content-card2 .card-image2,
@@ -562,8 +574,8 @@ label #cancel {
 }
 @media screen and (max-width: 600px) {
   .content-cards .cards {
-    -moz-column-gap: 50px;
-         column-gap: 50px;
+    -moz-column-gap: 60px;
+         column-gap: 60px;
   }
 }
 
