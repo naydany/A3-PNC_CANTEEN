@@ -144,7 +144,7 @@ label #cancel {
   padding-left: 3vh;
 }
 @media screen and (max-width: 830px) {
-  .footer .logo-pnc .logo-pnc img {
+  .footer .logo-pnc img {
     height: 25%;
   }
 }
@@ -229,6 +229,7 @@ label #cancel {
   .footer .socail-media {
     width: 90%;
     height: 50%;
+    margin-left: 26px;
   }
 }
 

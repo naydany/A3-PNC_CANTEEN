@@ -13,7 +13,7 @@
             padding-left: 3vh;
         }
         @include responsive('tablet'){
-            .logo-pnc img {
+            img {
                 height: 25%;
             }
         }
@@ -108,6 +108,7 @@
         .socail-media {
             width: 90%;
             height: 50%;
+            margin-left: 26px;
         }
     }
 }
