@@ -77,6 +77,13 @@
                         width: 50px;
 
                     }
+                    @include responsive('mobile'){
+                        img{
+                            width: 30px;
+                            height: 30px;
+                            margin-top: 12px;
+                        }
+                    }
 
                     .price {
                         margin-top: 20px;
@@ -223,7 +230,7 @@
     }
     @include responsive('mobile'){
         .cards{
-            column-gap: 30px;
+            column-gap: 50px;
         }
     }
 

@@ -261,6 +261,20 @@ label #cancel {
 .content-cards .cards .content-card8 .card1 .quality img {
   width: 50px;
 }
+@media screen and (max-width: 600px) {
+  .content-cards .cards .content-card1 .card1 .quality img,
+  .content-cards .cards .content-card2 .card1 .quality img,
+  .content-cards .cards .content-card3 .card1 .quality img,
+  .content-cards .cards .content-card4 .card1 .quality img,
+  .content-cards .cards .content-card5 .card1 .quality img,
+  .content-cards .cards .content-card6 .card1 .quality img,
+  .content-cards .cards .content-card7 .card1 .quality img,
+  .content-cards .cards .content-card8 .card1 .quality img {
+    width: 30px;
+    height: 30px;
+    margin-top: 12px;
+  }
+}
 .content-cards .cards .content-card1 .card1 .quality .price,
 .content-cards .cards .content-card2 .card1 .quality .price,
 .content-cards .cards .content-card3 .card1 .quality .price,
@@ -548,8 +562,8 @@ label #cancel {
 }
 @media screen and (max-width: 600px) {
   .content-cards .cards {
-    -moz-column-gap: 30px;
-         column-gap: 30px;
+    -moz-column-gap: 50px;
+         column-gap: 50px;
   }
 }
 
