@@ -108,8 +108,18 @@ header {
                     #545479;
                 transition: all .4s linear;
             }
+            @include responsive('tablet'){
+                .box-content1{
+                    height: 300px;
+                }
+            }
+            
         }
-
+        @include responsive('mobile'){
+            .box1{
+                width: 90%;
+            }
+        }
         
 
         .box2 {
@@ -143,7 +153,18 @@ header {
                 background-color: #31697D;
                 transition: all .4s linear;
             }
+            @include responsive('tablet'){
+                .box-content2{
+                    height: 300px;
+                }
+            }
         }
+        @include responsive('mobile'){
+            .box2{
+                display: none;
+            }
+        }
+        
     }
 
     // @include responsive('tablet') {
@@ -153,6 +174,12 @@ header {
     @include responsive('tablet') {
         .box-header {
             margin-left: 40px;
+        }
+    }
+    @include responsive('mobile') {
+        .box-header {
+            flex-direction: column;
+            margin-top: 9%;
         }
     }
 }

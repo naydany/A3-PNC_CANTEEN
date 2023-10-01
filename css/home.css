@@ -201,29 +201,6 @@ label #cancel {
   box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.464);
   background-image: url(/images/Tik-krerng.jpg);
 }
-.content-cards .cards .content-card1 .card-image1 button,
-.content-cards .cards .content-card2 .card-image1 button,
-.content-cards .cards .content-card3 .card-image1 button,
-.content-cards .cards .content-card4 .card-image1 button,
-.content-cards .cards .content-card5 .card-image1 button,
-.content-cards .cards .content-card6 .card-image1 button,
-.content-cards .cards .content-card7 .card-image1 button,
-.content-cards .cards .content-card8 .card-image1 button {
-  transform: translateY(120px);
-  margin-left: 20px;
-  height: 35px;
-  width: 70px;
-}
-.content-cards .cards .content-card1 .card-image1 button:hover,
-.content-cards .cards .content-card2 .card-image1 button:hover,
-.content-cards .cards .content-card3 .card-image1 button:hover,
-.content-cards .cards .content-card4 .card-image1 button:hover,
-.content-cards .cards .content-card5 .card-image1 button:hover,
-.content-cards .cards .content-card6 .card-image1 button:hover,
-.content-cards .cards .content-card7 .card-image1 button:hover,
-.content-cards .cards .content-card8 .card-image1 button:hover {
-  opacity: 0;
-}
 .content-cards .cards .content-card1 .card1,
 .content-cards .cards .content-card2 .card1,
 .content-cards .cards .content-card3 .card1,
@@ -420,6 +397,75 @@ label #cancel {
   box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.464);
   background-image: url(/images/sweet.jpg);
 }
+@media screen and (max-width: 600px) {
+  .content-cards .cards .content-card1 .card-image1,
+  .content-cards .cards .content-card1 .card-image2,
+  .content-cards .cards .content-card1 .card-image3,
+  .content-cards .cards .content-card1 .card-image4,
+  .content-cards .cards .content-card1 .card-image5,
+  .content-cards .cards .content-card1 .card-image6,
+  .content-cards .cards .content-card1 .card-image7,
+  .content-cards .cards .content-card1 .card-image8,
+  .content-cards .cards .content-card2 .card-image1,
+  .content-cards .cards .content-card2 .card-image2,
+  .content-cards .cards .content-card2 .card-image3,
+  .content-cards .cards .content-card2 .card-image4,
+  .content-cards .cards .content-card2 .card-image5,
+  .content-cards .cards .content-card2 .card-image6,
+  .content-cards .cards .content-card2 .card-image7,
+  .content-cards .cards .content-card2 .card-image8,
+  .content-cards .cards .content-card3 .card-image1,
+  .content-cards .cards .content-card3 .card-image2,
+  .content-cards .cards .content-card3 .card-image3,
+  .content-cards .cards .content-card3 .card-image4,
+  .content-cards .cards .content-card3 .card-image5,
+  .content-cards .cards .content-card3 .card-image6,
+  .content-cards .cards .content-card3 .card-image7,
+  .content-cards .cards .content-card3 .card-image8,
+  .content-cards .cards .content-card4 .card-image1,
+  .content-cards .cards .content-card4 .card-image2,
+  .content-cards .cards .content-card4 .card-image3,
+  .content-cards .cards .content-card4 .card-image4,
+  .content-cards .cards .content-card4 .card-image5,
+  .content-cards .cards .content-card4 .card-image6,
+  .content-cards .cards .content-card4 .card-image7,
+  .content-cards .cards .content-card4 .card-image8,
+  .content-cards .cards .content-card5 .card-image1,
+  .content-cards .cards .content-card5 .card-image2,
+  .content-cards .cards .content-card5 .card-image3,
+  .content-cards .cards .content-card5 .card-image4,
+  .content-cards .cards .content-card5 .card-image5,
+  .content-cards .cards .content-card5 .card-image6,
+  .content-cards .cards .content-card5 .card-image7,
+  .content-cards .cards .content-card5 .card-image8,
+  .content-cards .cards .content-card6 .card-image1,
+  .content-cards .cards .content-card6 .card-image2,
+  .content-cards .cards .content-card6 .card-image3,
+  .content-cards .cards .content-card6 .card-image4,
+  .content-cards .cards .content-card6 .card-image5,
+  .content-cards .cards .content-card6 .card-image6,
+  .content-cards .cards .content-card6 .card-image7,
+  .content-cards .cards .content-card6 .card-image8,
+  .content-cards .cards .content-card7 .card-image1,
+  .content-cards .cards .content-card7 .card-image2,
+  .content-cards .cards .content-card7 .card-image3,
+  .content-cards .cards .content-card7 .card-image4,
+  .content-cards .cards .content-card7 .card-image5,
+  .content-cards .cards .content-card7 .card-image6,
+  .content-cards .cards .content-card7 .card-image7,
+  .content-cards .cards .content-card7 .card-image8,
+  .content-cards .cards .content-card8 .card-image1,
+  .content-cards .cards .content-card8 .card-image2,
+  .content-cards .cards .content-card8 .card-image3,
+  .content-cards .cards .content-card8 .card-image4,
+  .content-cards .cards .content-card8 .card-image5,
+  .content-cards .cards .content-card8 .card-image6,
+  .content-cards .cards .content-card8 .card-image7,
+  .content-cards .cards .content-card8 .card-image8 {
+    width: 90px;
+    height: 90px;
+  }
+}
 @media screen and (max-width: 830px) {
   .content-cards .cards .content-card1,
   .content-cards .cards .content-card2,
@@ -431,6 +477,20 @@ label #cancel {
   .content-cards .cards .content-card8 {
     width: 300px;
     margin-top: 100px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .content-cards .cards .content-card1,
+  .content-cards .cards .content-card2,
+  .content-cards .cards .content-card3,
+  .content-cards .cards .content-card4,
+  .content-cards .cards .content-card5,
+  .content-cards .cards .content-card6,
+  .content-cards .cards .content-card7,
+  .content-cards .cards .content-card8 {
+    width: 160px;
+    height: 85px;
+    margin-top: 110px;
   }
 }
 .content-cards .cards .content-card1:hover,
@@ -464,6 +524,16 @@ label #cancel {
     height: 20vh;
   }
 }
+@media screen and (max-width: 600px) {
+  .content-cards .cards .content-card1:hover,
+  .content-cards .cards .content-card2:hover,
+  .content-cards .cards .content-card3:hover,
+  .content-cards .cards .content-card4:hover,
+  .content-cards .cards .content-card5:hover,
+  .content-cards .cards .content-card6:hover {
+    height: 21vh;
+  }
+}
 @media screen and (max-width: 830px) {
   .content-cards .content-card7,
   .content-cards .content-card8 {
@@ -476,10 +546,21 @@ label #cancel {
     height: 200px;
   }
 }
+@media screen and (max-width: 600px) {
+  .content-cards .cards {
+    -moz-column-gap: 30px;
+         column-gap: 30px;
+  }
+}
 
 @media screen and (max-width: 830px) {
   .content-cards {
     height: 870px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .content-cards {
+    height: 780px;
   }
 }
 * {
@@ -579,6 +660,16 @@ header .box-header .box1 .box-content1:hover {
   background-color: #545479;
   transition: all 0.4s linear;
 }
+@media screen and (max-width: 830px) {
+  header .box-header .box1 .box-content1 {
+    height: 300px;
+  }
+}
+@media screen and (max-width: 600px) {
+  header .box-header .box1 {
+    width: 90%;
+  }
+}
 header .box-header .box2 {
   width: 49%;
 }
@@ -608,8 +699,24 @@ header .box-header .box2 .box-content2:hover {
   transition: all 0.4s linear;
 }
 @media screen and (max-width: 830px) {
+  header .box-header .box2 .box-content2 {
+    height: 300px;
+  }
+}
+@media screen and (max-width: 600px) {
+  header .box-header .box2 {
+    display: none;
+  }
+}
+@media screen and (max-width: 830px) {
   header .box-header {
     margin-left: 40px;
+  }
+}
+@media screen and (max-width: 600px) {
+  header .box-header {
+    flex-direction: column;
+    margin-top: 9%;
   }
 }
 
@@ -665,6 +772,24 @@ header .box-header .box2 .box-content2:hover {
   width: 100%;
   height: 92vh;
 }
+@media screen and (max-width: 830px) {
+  .container .pic-content .images .images-inner .image-slide .imagebg-student1,
+  .container .pic-content .images .images-inner .image-slide .imagebg-student2,
+  .container .pic-content .images .images-inner .image-slide .imagebg-student3,
+  .container .pic-content .images .images-inner .image-slide .imagebg-student4 {
+    background-size: 1000px;
+    height: 40vh;
+  }
+}
+@media screen and (max-width: 600px) {
+  .container .pic-content .images .images-inner .image-slide .imagebg-student1,
+  .container .pic-content .images .images-inner .image-slide .imagebg-student2,
+  .container .pic-content .images .images-inner .image-slide .imagebg-student3,
+  .container .pic-content .images .images-inner .image-slide .imagebg-student4 {
+    background-size: 400px;
+    height: 23vh;
+  }
+}
 .container .pic-content #slide1:checked ~ .images .images-inner {
   margin-left: 0;
 }
@@ -673,6 +798,16 @@ header .box-header .box2 .box-content2:hover {
 }
 .container .pic-content #slide3:checked ~ .images .images-inner {
   margin-left: -200%;
+}
+@media screen and (max-width: 830px) {
+  .container .pic-content {
+    height: 40vh;
+  }
+}
+@media screen and (max-width: 600px) {
+  .container .pic-content {
+    height: 24vh;
+  }
 }
 
 @media screen and (max-width: 830px) {
@@ -683,6 +818,12 @@ header .box-header .box2 .box-content2:hover {
 @media screen and (max-width: 830px) {
   .pic-content {
     height: 42vh;
+    background-size: 900px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .pic-content {
+    height: 21vh;
     background-size: 900px;
   }
 }/*# sourceMappingURL=home.css.map */

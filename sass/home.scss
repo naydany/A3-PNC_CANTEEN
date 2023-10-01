@@ -44,7 +44,7 @@
                         width: 100%;
                         height: 92vh;
                     }
-    
+                    
                     .imagebg-student2 {
                         background-image: url(../images/student2.jpg);
                         // background-repeat: no-repeat;
@@ -52,7 +52,7 @@
                         width: 100%;
                         height: 92vh;
                     }
-    
+
                     .imagebg-student3 {
                         background-image: url(../images/student5.jpg);
                         // background-repeat: no-repeat;
@@ -60,6 +60,7 @@
                         width: 100%;
                         height: 92vh;
                     }
+
                     .imagebg-student4 {
                         background-image: url(../images/student4.jpg);
                         // background-repeat: no-repeat;
@@ -67,12 +68,33 @@
                         width: 100%;
                         height: 92vh;
                     }
+                    @include responsive('tablet'){
+                        .imagebg-student1,
+                        .imagebg-student2,
+                        .imagebg-student3,
+                        .imagebg-student4{
+                            background-size: 1000px;
+                            height: 40vh;
+                        }
+                    }
+                    @include responsive('mobile'){
+                        .imagebg-student1,
+                        .imagebg-student2,
+                        .imagebg-student3,
+                        .imagebg-student4{
+                            background-size: 400px;
+                            height: 23vh;
+                        }
+                    }
                 }
+                
 
             }
 
             
         }
+
+
 
         #slide1:checked~.images .images-inner {
             margin-left: 0;
@@ -87,7 +109,16 @@
         }
 
     }
-
+    @include responsive('tablet'){
+        .pic-content{
+            height: 40vh;
+        }
+    }
+    @include responsive('mobile'){
+        .pic-content{
+            height: 24vh;
+        }
+    }
 
 
 }
@@ -103,6 +134,13 @@
 @include responsive('tablet') {
     .pic-content {
         height: 42vh;
+        background-size: 900px;
+    }
+}
+
+@include responsive('mobile') {
+    .pic-content {
+        height: 21vh;
         background-size: 900px;
     }
 }
