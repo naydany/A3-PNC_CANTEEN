@@ -37,8 +37,6 @@
             position: relative;
             width: 250px;
             height: 120px;
-            // background-color: #1c767163;
-            // background-color: #1c6b6763;
             background-color: #06434063;
             margin-top: 80px;
             box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.18);
@@ -49,16 +47,6 @@
             .card-image1 {
                 @include cencered;
                 background-image: url(/images/Tik-krerng.jpg);
-                button{
-                    transform: translateY(120px);
-                    margin-left: 20px;
-                    height: 35px;
-                    width: 70px;
-                }
-                button:hover{
-                    opacity: 0;
-                    
-                }
             }
 
             .card1 {
@@ -89,10 +77,22 @@
                         width: 50px;
 
                     }
+                    @include responsive('mobile'){
+                        img{
+                            width: 30px;
+                            height: 30px;
+                            margin-top: 8px;
+                        }
+                    }
 
                     .price {
                         margin-top: 20px;
 
+                    }
+                    @include responsive('mobile'){
+                        .price{
+                            margin-top: 15px;
+                        }
                     }
                 }
 
@@ -132,19 +132,20 @@
                 @include cencered;
                 background-image: url(/images/sweet.jpg);
             }
+            @include responsive('mobile'){
+                .card-image1,
+                .card-image2,
+                .card-image3,
+                .card-image4,
+                .card-image5,
+                .card-image6,
+                .card-image7,
+                .card-image8{
+                    width: 90px;
+                    height: 90px;
+                }
+            }
 
-            // @include tablet{
-            //     .card-image1,
-            //     .card-image2,
-            //     .card-image3{
-            //         width: 68%;
-            //         height: 13vh;
-            //         transform: translateY(-50px);
-            //         margin-left: 38px;
-            //         background-repeat: no-repeat;
-            //         background-size: cover;
-            //     }
-            // }
         }
 
         @include responsive('tablet') {
@@ -161,13 +162,22 @@
                 margin-top: 100px;
             }
         }
+        @include responsive('mobile') {
 
-        // .content-card5,
-        // .content-card6,
-        // .content-card7,
-        // .content-card8 {
-        //     margin-top: 100px;
-        // }
+            .content-card1,
+            .content-card2,
+            .content-card3,
+            .content-card4,
+            .content-card5,
+            .content-card6,
+            .content-card7,
+            .content-card8 {
+                width: 160px;
+                height: 85px;
+                margin-top: 110px;
+            }
+        }
+
 
         .content-card1:hover,
         .content-card2:hover,
@@ -195,6 +205,16 @@
                 height: 20vh;
             }
         }
+        @include responsive('mobile') {
+            .content-card1:hover,
+            .content-card2:hover,
+            .content-card3:hover,
+            .content-card4:hover,
+            .content-card5:hover,
+            .content-card6:hover {
+                height: 21vh;
+            }
+        }
 
 
     }
@@ -213,11 +233,21 @@
             height: 200px;
         }
     }
+    @include responsive('mobile'){
+        .cards{
+            column-gap: 60px;
+        }
+    }
 
 }
 
 @include responsive('tablet'){
     .content-cards{
         height: 870px;
+    }
+}
+@include responsive('mobile'){
+    .content-cards{
+        height: 780px;
     }
 }
