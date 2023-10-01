@@ -34,10 +34,14 @@ nav ul {
   justify-content: end;
   margin-right: 60px;
 }
+nav ul li {
+  list-style-type: none;
+}
 nav ul li a {
   color: white;
   padding: 20px;
   margin-right: 10px;
+  text-decoration: none;
 }
 nav ul li a:hover {
   border: 1px solid red;
@@ -121,7 +125,7 @@ label #cancel {
 }
 .footer {
   width: 20%;
-  height: 100vh;
+  height: 96vh;
   padding-top: 20vh;
   padding-left: 10vh;
 }
@@ -182,7 +186,6 @@ label #cancel {
 }
 .footer .socail-media {
   height: 20%;
-  padding-top: 15vh;
 }
 .footer .socail-media i {
   padding: 8% 0% 0% 3%;
@@ -234,6 +237,7 @@ label #cancel {
 }
 @media screen and (max-width: 600px) {
   .footer {
+    width: 80%;
     padding-left: 12vh;
     padding-top: 2vh;
     height: 20vh;
@@ -245,6 +249,20 @@ label #cancel {
   font-family: sans-serif;
 }
 
+body {
+  animation: transition 0.75s;
+}
+
+@keyframes transition {
+  from {
+    opacity: 0;
+    transform: rotateX("-10deg");
+  }
+  to {
+    opacity: 1;
+    transform: matrix(0);
+  }
+}
 form {
   box-sizing: border-box;
   display: flex;
@@ -255,8 +273,8 @@ form .picture {
   padding-top: 20vh;
 }
 form .picture img {
-  padding-left: 15vh;
-  height: 90%;
+  padding-left: 10vh;
+  height: 75%;
   width: 95%;
 }
 @media screen and (max-width: 830px) {
@@ -321,10 +339,14 @@ form .user-form .student-id, form .user-form .email, form .user-form .feedback {
   form .user-form .student-id, form .user-form .email, form .user-form .feedback {
     padding-top: 3vh;
   }
+  form .user-form .email,
+  form .user-form .feedback {
+    width: 103%;
+  }
 }
 @media screen and (max-width: 830px) {
   form .user-form {
-    width: 100%;
+    width: 95%;
     height: 100vh;
     padding-top: 10vh;
     padding-left: 6.5vh;
@@ -332,7 +354,7 @@ form .user-form .student-id, form .user-form .email, form .user-form .feedback {
 }
 @media screen and (max-width: 600px) {
   form .user-form {
-    width: 100%;
+    width: 85%;
     height: 80vh;
     padding-top: 5vh;
     padding-left: 4vh;

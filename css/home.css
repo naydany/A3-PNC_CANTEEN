@@ -35,10 +35,14 @@ nav ul {
   justify-content: end;
   margin-right: 60px;
 }
+nav ul li {
+  list-style-type: none;
+}
 nav ul li a {
   color: white;
   padding: 20px;
   margin-right: 10px;
+  text-decoration: none;
 }
 nav ul li a:hover {
   border: 1px solid red;
@@ -780,12 +784,6 @@ header .box-header .box2 .box-content2:hover {
 @media screen and (max-width: 830px) {
   header {
     height: 780px;
-  }
-}
-@media screen and (max-width: 830px) {
-  header {
-    height: 510px;
-    background-size: 800px;
   }
 }
 .container .pic-content {

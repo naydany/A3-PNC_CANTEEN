@@ -2,7 +2,7 @@
 @import "responsive";
 .footer {
     width: 20%;
-    height: 100vh;
+    height: 96vh;
     padding-top: 20vh;
     padding-left: 10vh;
 
@@ -69,7 +69,6 @@
     }
     .socail-media {
         height: 20%;
-        padding-top: 15vh;
         i {
             padding: 8% 0% 0% 3%;
             font-size: 30px;
@@ -126,6 +125,7 @@
 
 @include responsive('mobile') {
     .footer {
+        width: 80%;
         padding-left: 12vh;
         padding-top: 2vh;
         height: 20vh;

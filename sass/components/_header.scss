@@ -263,9 +263,9 @@ header {
     }
 }
 
-@include responsive('tablet') {
-    header {
-        height: 510px;
-        background-size: 800px;
-    }
-}
+// @include responsive('tablet') {
+//     header {
+//         height: 510px;
+//         background-size: 800px;
+//     }
+// }

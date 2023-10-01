@@ -6,6 +6,22 @@
     padding: 0;
     font-family: sans-serif;
 }
+body {
+    animation: transition 0.75s;
+}
+
+@keyframes transition {
+    from {
+        opacity: 0;
+        transform: rotateX('-10deg');
+    }
+
+    to {
+        opacity: 1;
+        transform: matrix(0);
+    }
+}
+
 form{
     box-sizing: border-box;
     display: flex;
@@ -14,8 +30,8 @@ form{
         height: 100vh;
         padding-top: 20vh;
         img{
-            padding-left: 15vh;
-            height: 90%;
+            padding-left: 10vh;
+            height: 75%;
             width: 95%;
         }
         @include responsive('tablet'){
@@ -26,6 +42,7 @@ form{
             }
         }
     }
+
     @include responsive('tablet'){
         .picture{
             width: 100%;
@@ -81,11 +98,15 @@ form{
             .student-id,.email,.feedback{
             padding-top: 3vh;
         }
+        .email,
+        .feedback{
+            width: 103%;
+        }
 }
     }
     @include responsive('tablet'){
         .user-form{
-            width: 100%;
+            width: 95%;
             height: 100vh;
             padding-top: 10vh;
             padding-left: 6.5vh;
@@ -93,7 +114,7 @@ form{
     }
     @include responsive('mobile'){
         .user-form {
-            width: 100%;
+            width: 85%;
             height: 80vh;
             padding-top: 5vh;
             padding-left: 4vh;

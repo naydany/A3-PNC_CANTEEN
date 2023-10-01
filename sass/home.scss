@@ -8,8 +8,8 @@
         height: 92vh;
         background-color: #dfc74a;
 
-        input[type='radio']{
-            margin: 30px 0px 10px 20px; 
+        input[type='radio'] {
+            margin: 30px 0px 10px 20px;
             font-weight: 10px;
         }
 
@@ -150,33 +150,33 @@
 
     @include responsive('mobile') {
         .pic-content {
+            .pic-content {
+                height: 24vh;
+            }
+        }
+
+
+    }
+
+    @include responsive('tablet') {
+        .para {
+            margin-top: 200px;
+        }
+
+    }
+
+
+    @include responsive('tablet') {
         .pic-content {
-            height: 24vh;
+            height: 42vh;
+            background-size: 900px;
         }
     }
 
-
-}
-
-@include responsive('tablet') {
-    .para {
-        margin-top: 200px;
+    @include responsive('mobile') {
+        .pic-content {
+            height: 21vh;
+            background-size: 900px;
+        }
     }
-
-}
-
-
-@include responsive('tablet') {
-    .pic-content {
-        height: 42vh;
-        background-size: 900px;
-    }
-}
-
-@include responsive('mobile') {
-    .pic-content {
-        height: 21vh;
-        background-size: 900px;
-    }
-}
 }
