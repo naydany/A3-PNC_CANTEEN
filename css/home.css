@@ -120,28 +120,6 @@ label #cancel {
     display: block;
   }
 }
-* {
-  margin: 0;
-  padding: 0;
-  border: none;
-  text-decoration: none;
-  box-sizing: border-box;
-  font-family: sans-serif;
-  text-decoration: none;
-  list-style: none;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  border: none;
-  text-decoration: none;
-  box-sizing: border-box;
-  font-family: sans-serif;
-  text-decoration: none;
-  list-style: none;
-}
-
 .content-cards {
   height: 620px;
   background-color: rgba(0, 0, 0, 0.086);
@@ -812,9 +790,11 @@ header .box-header .box2 .box-content2:hover {
 }
 .container .pic-content {
   height: 92vh;
+  background-color: #dfc74a;
 }
 .container .pic-content input[type=radio] {
   margin: 30px 0px 10px 20px;
+  font-weight: 10px;
 }
 .container .pic-content .images {
   overflow: hidden;
@@ -884,30 +864,51 @@ header .box-header .box2 .box-content2:hover {
 .container .pic-content #slide3:checked ~ .images .images-inner {
   margin-left: -200%;
 }
+@keyframes slide {
+  0%, 25.203252032520325% {
+    margin-left: 0;
+  }
+  33.333333333333336%, 58.53658536585366% {
+    margin-left: -100%;
+  }
+  66.66666666666667%, 91.869918699187% {
+    margin-left: -200%;
+  }
+}
+.container .pic-content .st-slider > #play1:checked ~ .images .images-inner {
+  animation: slide 12300ms infinite;
+}
+@keyframes caption {
+  0%, 33.32333333333334% {
+    opacity: 1;
+  }
+  33.333333333333336%, 100% {
+    opacity: 0;
+  }
+}
 @media screen and (max-width: 830px) {
   .container .pic-content {
     height: 40vh;
   }
 }
 @media screen and (max-width: 600px) {
-  .container .pic-content {
+  .container .pic-content .pic-content {
     height: 24vh;
   }
 }
-
 @media screen and (max-width: 830px) {
-  .para {
+  .container .para {
     margin-top: 200px;
   }
 }
 @media screen and (max-width: 830px) {
-  .pic-content {
+  .container .pic-content {
     height: 42vh;
     background-size: 900px;
   }
 }
 @media screen and (max-width: 600px) {
-  .pic-content {
+  .container .pic-content {
     height: 21vh;
     background-size: 900px;
   }

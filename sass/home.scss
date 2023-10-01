@@ -6,10 +6,13 @@
 .container {
     .pic-content {
         height: 92vh;
+        background-color: #dfc74a;
 
         input[type='radio']{
             margin: 30px 0px 10px 20px; 
+            font-weight: 10px;
         }
+
         .images {
             overflow: hidden;
             top: 0;
@@ -26,6 +29,7 @@
                 .image-slide {
                     width: 20%;
                     float: left;
+
                     .imagebg-student1 {
                         background-image: url(../images/students.jpg);
                         // background-repeat: no-repeat;
@@ -33,7 +37,7 @@
                         width: 100%;
                         height: 92vh;
                     }
-                    
+
                     .imagebg-student2 {
                         background-image: url(../images/student2.jpg);
                         // background-repeat: no-repeat;
@@ -57,30 +61,34 @@
                         width: 100%;
                         height: 92vh;
                     }
-                    @include responsive('tablet'){
+
+                    @include responsive('tablet') {
+
                         .imagebg-student1,
                         .imagebg-student2,
                         .imagebg-student3,
-                        .imagebg-student4{
+                        .imagebg-student4 {
                             background-size: 1000px;
                             height: 40vh;
                         }
                     }
-                    @include responsive('mobile'){
+
+                    @include responsive('mobile') {
+
                         .imagebg-student1,
                         .imagebg-student2,
                         .imagebg-student3,
-                        .imagebg-student4{
+                        .imagebg-student4 {
                             background-size: 400px;
                             height: 22vh;
                         }
                     }
                 }
-                
+
 
             }
 
-            
+
         }
 
 
@@ -97,14 +105,52 @@
             margin-left: -200%;
         }
 
+        @keyframes slide {
+
+            0%,
+            25.203252032520325% {
+                margin-left: 0;
+            }
+
+            33.333333333333336%,
+            58.53658536585366% {
+                margin-left: -100%;
+            }
+
+            66.66666666666667%,
+            91.869918699187% {
+                margin-left: -200%;
+            }
+        }
+
+        .st-slider>#play1:checked~.images .images-inner {
+            animation: slide 12300ms infinite;
+        }
+
+        @keyframes caption {
+
+            0%,
+            33.32333333333334% {
+                opacity: 1;
+            }
+
+            33.333333333333336%,
+            100% {
+                opacity: 0;
+            }
+        }
+
     }
-    @include responsive('tablet'){
-        .pic-content{
+
+    @include responsive('tablet') {
+        .pic-content {
             height: 40vh;
         }
     }
-    @include responsive('mobile'){
-        .pic-content{
+
+    @include responsive('mobile') {
+        .pic-content {
+        .pic-content {
             height: 24vh;
         }
     }
@@ -132,4 +178,5 @@
         height: 21vh;
         background-size: 900px;
     }
+}
 }

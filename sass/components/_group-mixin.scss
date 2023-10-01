@@ -1,14 +1,5 @@
 
-*{
-    margin: 0;
-    padding: 0;
-    border: none;
-    text-decoration: none;
-    box-sizing: border-box;
-    font-family: sans-serif;
-    text-decoration: none;
-    list-style: none;
-}
+
 @mixin cencered{
     width: 118px;
     height: 115px;
@@ -29,5 +20,5 @@
     width: 25%;
     height: 40px;
     margin: 10px;
-    background-color:#18cec281 ;
+    background-color:$tealdark ;
 }

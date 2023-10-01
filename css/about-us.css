@@ -119,17 +119,6 @@ label #cancel {
     display: block;
   }
 }
-* {
-  margin: 0;
-  padding: 0;
-  border: none;
-  text-decoration: none;
-  box-sizing: border-box;
-  font-family: sans-serif;
-  text-decoration: none;
-  list-style: none;
-}
-
 body {
   margin: 0;
   padding: 0;
@@ -240,7 +229,7 @@ body {
   background: rgba(124, 71, 173, 0.245);
   padding: 0px 0px 50px 0px;
   width: 95%;
-  border: 2px solid blue;
+  border: 2px solid #003edd;
   height: 100%;
 }
 .main .schedule .content-schedule .text-schedule {
@@ -427,7 +416,6 @@ body {
   bottom: 0;
   width: 100%;
   padding: 20px;
-  background: #eff6af;
   border-top-left-radius: 20px;
   transform: translateY(120px);
   transition: transform 0.25s;

@@ -8,21 +8,22 @@
     text-decoration: none;
     list-style: none;
 }
+
 body {
     animation: transition 0.75s;
- }
- 
- @keyframes transition{
-    from{
-       opacity: 0;
-       transform: rotateX('-10deg');
+}
+
+@keyframes transition {
+    from {
+        opacity: 0;
+        transform: rotateX('-10deg');
     }
- 
-    to{
-       opacity: 1;
-       transform: matrix(0);
+
+    to {
+        opacity: 1;
+        transform: matrix(0);
     }
- }
+}
 
 header {
     width: 100%;
@@ -71,6 +72,7 @@ header {
             padding: 50px 0 30px 40px;
         }
     }
+
     @include responsive('mobile') {
         .content-par {
             font-size: 10px;
@@ -102,6 +104,7 @@ header {
 
         .box1 {
             width: 49%;
+
             .box-content1 {
                 width: 100%;
                 background-color: rgba(242, 243, 245, 0.414);
@@ -112,12 +115,14 @@ header {
                 img {
                     width: 60px;
                 }
-                @include responsive('mobile'){
-                    img{
+
+                @include responsive('mobile') {
+                    img {
                         width: 25px;
                     }
-                    
+
                 }
+
                 span {
                     font-family: 'Dancing Script', cursive;
                     font-size: 25px;
@@ -125,49 +130,55 @@ header {
                     color: $mainBrandColor;
                     padding-bottom: 20px;
                 }
-               
+
 
                 h5 {
                     margin-top: 5px;
-                    color: black;
+                    color: $thirdcolor;
                     text-align: justify;
                 }
-                @include responsive('mobile'){
-                    h5{
+
+                @include responsive('mobile') {
+                    h5 {
                         display: none;
                     }
                 }
             }
+
             .box-content1:hover {
                 background-color:
-                    #545479;
+                $hovercolor;
                 transition: all .4s linear;
             }
-            @include responsive('tablet'){
-                .box-content1{
+
+            @include responsive('tablet') {
+                .box-content1 {
                     height: 300px;
                 }
             }
-            @include responsive('mobile'){
-                .box-content1{
+
+            @include responsive('mobile') {
+                .box-content1 {
                     height: 80px;
                 }
             }
-            
+
         }
-        @include responsive('mobile'){
-            .box1{
+
+        @include responsive('mobile') {
+            .box1 {
                 width: 90%;
             }
         }
-        
+
 
         .box2 {
             width: 49%;
+
             .box-content2 {
                 width: 100%;
                 background-color: rgba(242, 243, 245, 0.414);
-                border-top: 8px solid #31697D;
+                border-top: 8px solid $teallight;
 
                 height: 220px;
                 padding: 25px;
@@ -175,8 +186,9 @@ header {
                 img {
                     width: 60px;
                 }
-                @include responsive('mobile'){
-                    img{
+
+                @include responsive('mobile') {
+                    img {
                         width: 25px;
                     }
                 }
@@ -193,33 +205,38 @@ header {
                     color: $thirdcolor;
                     text-align: justify;
                 }
-                @include responsive('mobile'){
-                    h5{
+
+                @include responsive('mobile') {
+                    h5 {
                         display: none;
                     }
                 }
             }
+
             .box-content2:hover {
-                background-color: #31697D;
+                background-color: $teallight;
                 transition: all .4s linear;
             }
-            @include responsive('tablet'){
-                .box-content2{
+
+            @include responsive('tablet') {
+                .box-content2 {
                     height: 300px;
                 }
             }
-            @include responsive ('mobile'){
-                .box-content2{
+
+            @include responsive ('mobile') {
+                .box-content2 {
                     height: 80px;
                 }
             }
         }
-        @include responsive('mobile'){
-            .box2{
+
+        @include responsive('mobile') {
+            .box2 {
                 width: 90%;
             }
         }
-        
+
     }
 
     // @include responsive('tablet') {
@@ -231,6 +248,7 @@ header {
             margin-left: 40px;
         }
     }
+
     @include responsive('mobile') {
         .box-header {
             flex-direction: column;
@@ -244,6 +262,7 @@ header {
         height: 780px;
     }
 }
+
 @include responsive('tablet') {
     header {
         height: 510px;

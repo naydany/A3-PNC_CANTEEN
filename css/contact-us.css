@@ -119,17 +119,6 @@ label #cancel {
     display: block;
   }
 }
-* {
-  margin: 0;
-  padding: 0;
-  border: none;
-  text-decoration: none;
-  box-sizing: border-box;
-  font-family: sans-serif;
-  text-decoration: none;
-  list-style: none;
-}
-
 .footer {
   width: 20%;
   height: 100vh;
