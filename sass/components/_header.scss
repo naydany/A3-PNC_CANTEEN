@@ -8,7 +8,21 @@
     text-decoration: none;
     list-style: none;
 }
-
+body {
+    animation: transition 0.75s;
+ }
+ 
+ @keyframes transition{
+    from{
+       opacity: 0;
+       transform: rotateX('-10deg');
+    }
+ 
+    to{
+       opacity: 1;
+       transform: matrix(0);
+    }
+ }
 
 header {
     width: 100%;
@@ -57,6 +71,16 @@ header {
             padding: 50px 0 30px 40px;
         }
     }
+    @include responsive('mobile') {
+        .content-par {
+            font-size: 10px;
+        }
+
+        h3 {
+            padding: 30px 0 10px 40px;
+            font-size: 20px;
+        }
+    }
 
     @include responsive('tablet') {
         .content-par {
@@ -88,7 +112,12 @@ header {
                 img {
                     width: 60px;
                 }
-
+                @include responsive('mobile'){
+                    img{
+                        width: 25px;
+                    }
+                    
+                }
                 span {
                     font-family: 'Dancing Script', cursive;
                     font-size: 25px;
@@ -96,11 +125,17 @@ header {
                     color: $mainBrandColor;
                     padding-bottom: 20px;
                 }
+               
 
                 h5 {
                     margin-top: 5px;
                     color: black;
                     text-align: justify;
+                }
+                @include responsive('mobile'){
+                    h5{
+                        display: none;
+                    }
                 }
             }
             .box-content1:hover {
@@ -111,6 +146,11 @@ header {
             @include responsive('tablet'){
                 .box-content1{
                     height: 300px;
+                }
+            }
+            @include responsive('mobile'){
+                .box-content1{
+                    height: 80px;
                 }
             }
             
@@ -135,6 +175,11 @@ header {
                 img {
                     width: 60px;
                 }
+                @include responsive('mobile'){
+                    img{
+                        width: 25px;
+                    }
+                }
 
                 span {
                     font-family: 'Dancing Script', cursive;
@@ -148,6 +193,11 @@ header {
                     color: $thirdcolor;
                     text-align: justify;
                 }
+                @include responsive('mobile'){
+                    h5{
+                        display: none;
+                    }
+                }
             }
             .box-content2:hover {
                 background-color: #31697D;
@@ -158,10 +208,15 @@ header {
                     height: 300px;
                 }
             }
+            @include responsive ('mobile'){
+                .box-content2{
+                    height: 80px;
+                }
+            }
         }
         @include responsive('mobile'){
             .box2{
-                display: none;
+                width: 90%;
             }
         }
         
@@ -179,7 +234,7 @@ header {
     @include responsive('mobile') {
         .box-header {
             flex-direction: column;
-            margin-top: 9%;
+            margin-top: 6%;
         }
     }
 }
@@ -187,5 +242,11 @@ header {
 @include responsive('tablet') {
     header {
         height: 780px;
+    }
+}
+@include responsive('tablet') {
+    header {
+        height: 510px;
+        background-size: 800px;
     }
 }
