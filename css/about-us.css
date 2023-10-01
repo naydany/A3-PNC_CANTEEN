@@ -179,19 +179,19 @@ body {
 }
 @media screen and (max-width: 830px) {
   .main .container1 .p-container1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 87%;
     font-size: 15px;
-    justify-content: center;
-    align-items: center;
-    display: flex;
     margin-left: -40px;
   }
 }
 @media screen and (max-width: 600px) {
   .main .container1 .p-container1 {
-    width: 95%;
+    width: 93vh;
     font-size: 15px;
-    margin-left: 25px;
+    margin-left: 80px;
   }
 }
 @media screen and (max-width: 830px) {
@@ -268,10 +268,10 @@ body {
 }
 @media screen and (max-width: 600px) {
   .main .schedule .content-schedule .text-schedule .text {
-    width: 65%;
+    width: 70%;
     text-align: justify;
-    margin-top: -32vh;
-    margin-left: -5px;
+    margin-top: -36.8vh;
+    margin-left: -50px;
     border-radius: 0px;
   }
 }
@@ -300,10 +300,10 @@ body {
 }
 @media screen and (max-width: 600px) {
   .main .schedule .content-schedule .text-schedule .price {
-    width: 90px;
+    width: 100px;
     border-radius: 100px;
     margin-top: -35vh;
-    margin-right: 10px;
+    margin-left: 50px;
     border: 1px solid white;
   }
 }
@@ -377,7 +377,7 @@ body {
 }
 @media screen and (max-width: 600px) {
   .main .cards .best-food {
-    margin-left: 20px;
+    margin-left: 40px;
     font-size: 20px;
   }
 }
@@ -558,11 +558,13 @@ body {
   .main .cards .all-cards .card11,
   .main .cards .all-cards .card12 {
     position: relative;
-    width: 220px;
+    width: 270px;
     height: 250px;
     overflow: hidden;
     border-radius: 20px 0px 20px 0px;
     border: 1px solid;
+    margin-right: 75px;
+    gap: 20px;
   }
   .main .cards .all-cards .card2,
   .main .cards .all-cards .card4,
@@ -570,13 +572,7 @@ body {
   .main .cards .all-cards .card8,
   .main .cards .all-cards .card10,
   .main .cards .all-cards .card12 {
-    position: relative;
-    width: 220px;
-    height: 250px;
-    overflow: hidden;
-    border-radius: 20px 0px 20px 0px;
-    border: 1px solid;
-    margin-left: 11%;
+    margin-right: -8%;
   }
 }
 .main .cards .all-cards .card1:hover .card_content,
@@ -621,10 +617,10 @@ body {
   .main .cards {
     width: 98%;
     margin-top: -30vh;
-    margin-left: 0.5vh;
-    justify-content: center;
-    align-items: center;
+    margin-left: -3vh;
     display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 
@@ -643,6 +639,10 @@ th {
   font-size: 12px;
   background-image: linear-gradient(1deg, rgba(38, 37, 37, 0.3), #1c1b1b);
   color: white;
+}
+
+thead {
+  color: #dfc74a;
 }
 
 @media screen and (max-width: 600px) {
