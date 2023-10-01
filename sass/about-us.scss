@@ -73,7 +73,7 @@ body {
     }
     @include responsive ('tablet') {
         .container1 {
-            width: 79vh;
+            width: 89.5vh;
             margin-left: 0px;
         }
     }
@@ -152,7 +152,7 @@ body {
                     .text {
                         width:65%;
                         text-align: justify;
-                        margin-top: -31.5vh;
+                        margin-top: -32vh;
                         margin-left: -5px;
                         border-radius: 0px;
                     }
@@ -276,7 +276,8 @@ body {
         }
         @include responsive ('mobile') {
             .best-food {
-                margin-left: 30px;
+                margin-left: 20px;
+                font-size: 20px;
             }
         }
 
@@ -408,7 +409,20 @@ body {
                     overflow: hidden;
                     border-radius: 20px 0px 20px 0px;
                     border: 1px solid;
-                    margin-left:-5px;
+                }
+                .card2,
+                .card4,
+                .card6,
+                .card8,
+                .card10,
+                .card12 {
+                    position: relative;
+                    width: 220px;
+                    height: 250px;
+                    overflow: hidden;
+                    border-radius: 20px 0px 20px 0px;
+                    border: 1px solid;
+                    margin-left:11%;
                 }
             }
 
@@ -457,18 +471,18 @@ body {
         }
     }
 
-    // @include responsive ('mobile') {
-    //     .all-cards {
-    //         width: auto;
-    //         margin-top: -20px;
-    //         margin-left: -20px;
-    //         justify-content: center;
-    //         align-items: center;
-    //         display: flex;
+    @include responsive ('mobile') {
+        .cards {
+            width: 98%;
+            margin-top: -30vh;
+            margin-left: 0.5vh;
+            justify-content: center;
+            align-items: center;
+            display: flex;
 
 
-    //     }
-    // }
+        }
+    }
 
 
 }
