@@ -3,12 +3,9 @@
 @import"responsive";
 nav {
     color: $neutral;
-    height: 15vh;
+    height: 18vh;
     width: 100%;
-    // border-bottom: 1px solid $neutral;
-    box-shadow: 0px 5px 20px rgba(220, 130, 12, 0.18);
-    // background-color: rgba(0, 0, 0, 0.744);
-    background-color: rgba(5, 95, 115, 0.561);
+    background-color: black;
     display: flex;
     position: fixed;
     z-index: 1;
@@ -16,10 +13,11 @@ nav {
         width: 50%;
         display: flex;
         align-items: center;
-        margin-left: 60px;
+        padding-left: 65px;
+        
         img {
             height: 60px;
-            margin-right: 10px;
+            margin-right: 40px;
         }
 
         h1 {
@@ -31,7 +29,7 @@ nav {
     @include responsive('tablet'){
         .logo{
             width: 30%;
-            margin-left: 40px;
+            padding-left: 35px;
         }
     }
     ul {
@@ -41,25 +39,92 @@ nav {
         justify-content: end;
         margin-right: 60px;
         li {
+           
             a {
                 color: $neutral;
-                padding: 10px;
+                padding: 20px;
+                margin-right: 10px;
             }
             a:hover{
-                background-color: black;
+                border: 1px solid red;
+            }
+            @include responsive('mobile'){
+                a{
+                    font-size: 20px;
+                }
+                
+            }
+        }
+        @include responsive('mobile'){
+            li{
+                display:block ;
+                margin: 30px 0;
+                line-height: 50px;
             }
         }
     }
     @include responsive('tablet'){
         ul{
             width: 70%;
-            margin-left: 10px;
             display: flex;
+            margin-right: 40px;
         }
+        
+    }
+    @include responsive('mobile'){
+        ul{
+            width: 60%;
+            right: -90%;
+            display: flex;
+            position: fixed;
+            background-color: black;
+            height: 50vh;
+            top: 120px;
+            text-align: center;
+            flex-direction: column;
+            transition: all .5s;
+        }
+        @include responsive('mobile'){
+            #check:checked ~ ul{
+                right: -37px;
+            }
+        }
+        
     }
 }
-.Active,
+.home,
 .about,
 .contact{
-    background-color: black;
+    border: 1px solid red;
+}
+label #btn,
+label #cancel{
+    color: white;
+    font-size: 30px;
+    line-height: 60px;
+    margin-right: 40px;
+    position: absolute;
+    top: 30px;
+    right: 0;
+    cursor: pointer;
+    display: none;
+}
+@include responsive('mobile'){
+    label #btn{
+        display: block;
+    }
+}
+#check{
+    display: none;
+
+}
+@include responsive('mobile'){
+    #check:checked ~ label #btn{
+        display: none;
+    }
+}
+@include responsive('mobile'){
+    #check:checked ~ label #cancel{
+        display: block;
+    }
 }

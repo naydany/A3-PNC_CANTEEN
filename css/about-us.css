@@ -1,9 +1,8 @@
 nav {
   color: white;
-  height: 15vh;
+  height: 18vh;
   width: 100%;
-  box-shadow: 0px 5px 20px rgba(220, 130, 12, 0.18);
-  background-color: rgba(5, 95, 115, 0.561);
+  background-color: black;
   display: flex;
   position: fixed;
   z-index: 1;
@@ -12,11 +11,11 @@ nav .logo {
   width: 50%;
   display: flex;
   align-items: center;
-  margin-left: 60px;
+  padding-left: 65px;
 }
 nav .logo img {
   height: 60px;
-  margin-right: 10px;
+  margin-right: 40px;
 }
 nav .logo h1 {
   font-weight: bold;
@@ -25,7 +24,7 @@ nav .logo h1 {
 @media screen and (max-width: 830px) {
   nav .logo {
     width: 30%;
-    margin-left: 40px;
+    padding-left: 35px;
   }
 }
 nav ul {
@@ -37,25 +36,89 @@ nav ul {
 }
 nav ul li a {
   color: white;
-  padding: 10px;
+  padding: 20px;
+  margin-right: 10px;
 }
 nav ul li a:hover {
-  background-color: black;
+  border: 1px solid red;
+}
+@media screen and (max-width: 600px) {
+  nav ul li a {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 600px) {
+  nav ul li {
+    display: block;
+    margin: 30px 0;
+    line-height: 50px;
+  }
 }
 @media screen and (max-width: 830px) {
   nav ul {
     width: 70%;
-    margin-left: 10px;
     display: flex;
+    margin-right: 40px;
+  }
+}
+@media screen and (max-width: 600px) {
+  nav ul {
+    width: 60%;
+    right: -90%;
+    display: flex;
+    position: fixed;
+    background-color: black;
+    height: 50vh;
+    top: 120px;
+    text-align: center;
+    flex-direction: column;
+    transition: all 0.5s;
+  }
+}
+@media screen and (max-width: 600px) and (max-width: 600px) {
+  nav #check:checked ~ ul {
+    right: -37px;
   }
 }
 
-.Active,
+.home,
 .about,
 .contact {
-  background-color: black;
+  border: 1px solid red;
 }
 
+label #btn,
+label #cancel {
+  color: white;
+  font-size: 30px;
+  line-height: 60px;
+  margin-right: 40px;
+  position: absolute;
+  top: 30px;
+  right: 0;
+  cursor: pointer;
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  label #btn {
+    display: block;
+  }
+}
+#check {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  #check:checked ~ label #btn {
+    display: none;
+  }
+}
+@media screen and (max-width: 600px) {
+  #check:checked ~ label #cancel {
+    display: block;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -72,22 +135,6 @@ body {
   padding: 0;
 }
 
-@media screen and (max-width: 600px) {
-  .li_navbar,
-  .logo > span {
-    font-size: 12px;
-  }
-  .logo > img {
-    margin-left: -40px;
-  }
-  nav {
-    display: flex;
-    justify-content: space-between;
-  }
-  .li_navbar {
-    margin-right: 5px;
-  }
-}
 .main {
   width: 100%;
   display: flex;
@@ -112,14 +159,17 @@ body {
 }
 @media screen and (max-width: 830px) {
   .main .container1 .h2-container1 {
-    width: 48%;
-    margin-left: 25px;
+    width: auto;
+    justify-content: center;
+    align-items: center;
   }
 }
 @media screen and (max-width: 600px) {
   .main .container1 .h2-container1 {
-    width: 51%;
-    font-size: 15px;
+    width: auto;
+    font-size: 25px;
+    justify-content: center;
+    align-items: center;
   }
 }
 .main .container1 .p-container1 {
@@ -127,22 +177,27 @@ body {
   margin: 20px;
   text-align: justify;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 830px) {
   .main .container1 .p-container1 {
-    width: 98%;
+    width: 99%;
     font-size: 15px;
-    margin-left: 0px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-left: 55px;
   }
 }
 @media screen and (max-width: 600px) {
-  .main .container1 {
-    width: 100%;
+  .main .container1 .p-container1 {
+    width: 95%;
+    font-size: 15px;
+    margin-left: 25px;
   }
 }
 @media screen and (max-width: 830px) {
   .main .container1 {
-    width: 100%;
-    margin-left: 35px;
+    width: 79vh;
+    margin-left: 0px;
   }
 }
 .main .container2 {
@@ -158,35 +213,35 @@ body {
 }
 @media screen and (max-width: 830px) {
   .main .container2 .h2-container2 {
-    width: 34%;
-    margin-left: 80px;
+    width: auto;
+    align-items: center;
+    justify-content: center;
   }
 }
 @media screen and (max-width: 600px) {
   .main .container2 .h2-container2 {
-    width: 46%;
+    width: auto;
     font-size: 20px;
-  }
-}
-@media screen and (max-width: 600px) {
-  .main .container2 {
-    width: 100%;
+    justify-content: center;
     align-items: center;
   }
 }
 .main .schedule {
   background: url(../images/pnc-canteen.png);
   background-repeat: no-repeat;
-  background-size: 95% 100%;
+  background-size: 95%;
+  height: 95vh;
   margin-left: 70px;
   margin-top: 20px;
 }
 .main .schedule .content-schedule {
   display: flex;
   align-items: center;
-  background: rgba(61, 140, 137, 0.398);
+  background: rgba(124, 71, 173, 0.245);
   padding: 0px 0px 50px 0px;
   width: 95%;
+  border: 2px solid blue;
+  height: 100%;
 }
 .main .schedule .content-schedule .text-schedule {
   display: flex;
@@ -198,48 +253,58 @@ body {
   background-image: linear-gradient(1deg, rgba(14, 10, 10, 0.3), #1f1c1c);
   width: 90%;
   padding: 30px;
-  margin-bottom: 45px;
+  margin-top: -15px;
+  text-align: justify;
   border-radius: 0px 0px 20px 0px;
 }
 @media screen and (max-width: 830px) {
   .main .schedule .content-schedule .text-schedule .text {
-    width: 80%;
+    width: 78vh;
     text-align: justify;
-    margin-top: 35px;
-    margin-left: 0px;
+    margin-top: 0vh;
+    margin-left: -50%;
+    border-radius: 0px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .main .schedule .content-schedule .text-schedule .text {
+    width: 65%;
+    text-align: justify;
+    margin-top: -31.5vh;
+    margin-left: -5px;
+    border-radius: 0px;
   }
 }
 .main .schedule .content-schedule .text-schedule .price {
   display: flex;
   text-align: center;
   justify-content: center;
+  font-weight: bold;
   background-image: linear-gradient(1deg, rgba(14, 10, 10, 0.3), rgba(46, 46, 45, 0.9098039216));
   color: #dfc74a;
   margin-left: 15%;
-  margin-top: 20px;
+  margin-top: 100px;
   width: 200px;
-  padding: 10px;
+  padding: 30px 10px 30px 10px;
   border-radius: 100px;
+  border: 1px solid white;
 }
 @media screen and (max-width: 830px) {
   .main .schedule .content-schedule .text-schedule .price {
-    width: 80px;
+    width: 200px;
     border-radius: 100%;
     padding: 10px;
-    margin-left: 30px;
+    margin-left: 20%;
+    margin-top: 15px;
   }
 }
 @media screen and (max-width: 600px) {
   .main .schedule .content-schedule .text-schedule .price {
-    width: 60px;
+    width: 90px;
     border-radius: 100px;
-    margin-top: -20px;
-    margin-left: 9px;
-  }
-}
-@media screen and (max-width: 830px) {
-  .main .schedule .content-schedule .text-schedule {
-    margin-top: 100px;
+    margin-top: -35vh;
+    margin-right: 10px;
+    border: 1px solid white;
   }
 }
 @media screen and (max-width: 600px) {
@@ -248,11 +313,19 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: row;
-    width: 100%;
-    margin-top: -35px;
-    margin-left: -20px;
+    width: auto;
+    margin-top: 25.5vh;
+    margin-left: 5px;
     font-size: 10px;
     padding: 0px;
+  }
+}
+@media screen and (max-width: 830px) {
+  .main .schedule .content-schedule {
+    display: flex;
+    flex-direction: column;
+    width: 98%;
+    height: 52.5vh;
   }
 }
 @media screen and (max-width: 600px) {
@@ -260,26 +333,28 @@ body {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 38vh;
+    height: 50%;
+    margin-top: -48vh;
+    background: none;
+    border: none;
   }
 }
 @media screen and (max-width: 830px) {
   .main .schedule {
-    width: 100%;
-  }
-  .main .table {
-    font-size: 48%;
-    margin-bottom: 20px;
-    margin-left: 0px;
+    display: flex;
+    flex-direction: column;
+    background-size: 98%;
+    margin-left: 20px;
   }
 }
 @media screen and (max-width: 600px) {
   .main .schedule {
     display: flex;
     flex-direction: column;
-    background-size: 99%;
+    background-size: 100%;
     justify-content: center;
-    margin-left: 25px;
+    margin-left: 15px;
+    margin-right: 15px;
   }
 }
 .main .cards {
@@ -294,6 +369,11 @@ body {
   align-self: self-start;
   margin-left: 70px;
   margin-top: 10px;
+}
+@media screen and (max-width: 830px) {
+  .main .cards .best-food {
+    margin-left: 20px;
+  }
 }
 @media screen and (max-width: 600px) {
   .main .cards .best-food {
@@ -456,7 +536,7 @@ body {
   .main .cards .all-cards .card11,
   .main .cards .all-cards .card12 {
     position: relative;
-    width: 200px;
+    width: 202px;
     height: 250px;
     overflow: hidden;
     border-radius: 20px 0px 20px 0px;
@@ -477,40 +557,12 @@ body {
   .main .cards .all-cards .card11,
   .main .cards .all-cards .card12 {
     position: relative;
-    width: 192px;
+    width: 220px;
     height: 250px;
     overflow: hidden;
     border-radius: 20px 0px 20px 0px;
     border: 1px solid;
-  }
-  .main .cards .all-cards .card2,
-  .main .cards .all-cards .card4,
-  .main .cards .all-cards .card6,
-  .main .cards .all-cards .card8,
-  .main .cards .all-cards .card10,
-  .main .cards .all-cards .card12 {
-    position: relative;
-    width: 192px;
-    height: 250px;
-    overflow: hidden;
-    border-radius: 20px 0px 20px 0px;
-    border: 1px solid;
-    margin-right: -53px;
-  }
-  .main .cards .all-cards .card1,
-  .main .cards .all-cards .card3,
-  .main .cards .all-cards .card5,
-  .main .cards .all-cards .card7,
-  .main .cards .all-cards .card9,
-  .main .cards .all-cards .card11 {
-    position: relative;
-    width: 192px;
-    height: 250px;
-    overflow: hidden;
-    border-radius: 20px 0px 20px 0px;
-    border: 1px solid;
-    margin-left: -6px;
-    margin-right: 10px;
+    margin-left: -5px;
   }
 }
 .main .cards .all-cards .card1:hover .card_content,
@@ -544,20 +596,11 @@ body {
 }
 @media screen and (max-width: 830px) {
   .main .all-cards {
-    width: 95%;
+    width: 92%;
     margin-left: 100px;
-    justify-content: center;
-    align-items: center;
-    display: flex;
   }
-}
-@media screen and (max-width: 600px) {
-  .main .all-cards {
-    width: 90%;
-    margin-left: 0px;
-    justify-content: center;
-    align-items: center;
-    display: flex;
+  .main .cards {
+    margin-top: -40vh;
   }
 }
 
@@ -589,11 +632,39 @@ th {
     display: none;
   }
 }
+@media screen and (max-width: 830px) {
+  .table {
+    width: 92%;
+    margin-right: 0vh;
+    font-size: 10px;
+    margin-top: 3vh;
+  }
+}
+@media screen and (max-width: 600px) {
+  .table {
+    width: 92%;
+    margin-right: 0vh;
+    font-size: 10px;
+    margin-top: -5vh;
+  }
+}
 .table th,
 .table td {
-  padding: 15px;
+  padding: 30px 5px 30px 5px;
 }
 
+@media screen and (max-width: 830px) {
+  .table th,
+  .table td {
+    padding: 12px 10px 12px 10px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .table th,
+  .table td {
+    padding: 5px 10px 5px 10px;
+  }
+}
 .table th {
   align-items: center;
   text-align: center;

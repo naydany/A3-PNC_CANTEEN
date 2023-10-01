@@ -1,9 +1,8 @@
 nav {
   color: white;
-  height: 15vh;
+  height: 18vh;
   width: 100%;
-  box-shadow: 0px 5px 20px rgba(220, 130, 12, 0.18);
-  background-color: rgba(5, 95, 115, 0.561);
+  background-color: black;
   display: flex;
   position: fixed;
   z-index: 1;
@@ -12,11 +11,11 @@ nav .logo {
   width: 50%;
   display: flex;
   align-items: center;
-  margin-left: 60px;
+  padding-left: 65px;
 }
 nav .logo img {
   height: 60px;
-  margin-right: 10px;
+  margin-right: 40px;
 }
 nav .logo h1 {
   font-weight: bold;
@@ -25,7 +24,7 @@ nav .logo h1 {
 @media screen and (max-width: 830px) {
   nav .logo {
     width: 30%;
-    margin-left: 40px;
+    padding-left: 35px;
   }
 }
 nav ul {
@@ -37,25 +36,102 @@ nav ul {
 }
 nav ul li a {
   color: white;
-  padding: 10px;
+  padding: 20px;
+  margin-right: 10px;
 }
 nav ul li a:hover {
+<<<<<<< HEAD
   background-color: black;
+=======
+  border: 1px solid red;
+}
+@media screen and (max-width: 600px) {
+  nav ul li a {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 600px) {
+  nav ul li {
+    display: block;
+    margin: 30px 0;
+    line-height: 50px;
+  }
+>>>>>>> d3c11a909c65a5f7842ec5b3711745fb5d51c9d0
 }
 @media screen and (max-width: 830px) {
   nav ul {
     width: 70%;
-    margin-left: 10px;
     display: flex;
+    margin-right: 40px;
+  }
+}
+@media screen and (max-width: 600px) {
+  nav ul {
+    width: 60%;
+    right: -90%;
+    display: flex;
+    position: fixed;
+    background-color: black;
+    height: 50vh;
+    top: 120px;
+    text-align: center;
+    flex-direction: column;
+    transition: all 0.5s;
+  }
+}
+@media screen and (max-width: 600px) and (max-width: 600px) {
+  nav #check:checked ~ ul {
+    right: -37px;
   }
 }
 
+<<<<<<< HEAD
 .Active,
 .about,
 .contact {
   background-color: black;
 }
 
+=======
+.home,
+.about,
+.contact {
+  border: 1px solid red;
+}
+
+label #btn,
+label #cancel {
+  color: white;
+  font-size: 30px;
+  line-height: 60px;
+  margin-right: 40px;
+  position: absolute;
+  top: 30px;
+  right: 0;
+  cursor: pointer;
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  label #btn {
+    display: block;
+  }
+}
+#check {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  #check:checked ~ label #btn {
+    display: none;
+  }
+}
+@media screen and (max-width: 600px) {
+  #check:checked ~ label #cancel {
+    display: block;
+  }
+}
+>>>>>>> d3c11a909c65a5f7842ec5b3711745fb5d51c9d0
 * {
   margin: 0;
   padding: 0;

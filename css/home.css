@@ -1,10 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
 nav {
   color: white;
-  height: 15vh;
+  height: 18vh;
   width: 100%;
-  box-shadow: 0px 5px 20px rgba(220, 130, 12, 0.18);
-  background-color: rgba(5, 95, 115, 0.561);
+  background-color: black;
   display: flex;
   position: fixed;
   z-index: 1;
@@ -13,11 +12,11 @@ nav .logo {
   width: 50%;
   display: flex;
   align-items: center;
-  margin-left: 60px;
+  padding-left: 65px;
 }
 nav .logo img {
   height: 60px;
-  margin-right: 10px;
+  margin-right: 40px;
 }
 nav .logo h1 {
   font-weight: bold;
@@ -26,7 +25,7 @@ nav .logo h1 {
 @media screen and (max-width: 830px) {
   nav .logo {
     width: 30%;
-    margin-left: 40px;
+    padding-left: 35px;
   }
 }
 nav ul {
@@ -38,25 +37,89 @@ nav ul {
 }
 nav ul li a {
   color: white;
-  padding: 10px;
+  padding: 20px;
+  margin-right: 10px;
 }
 nav ul li a:hover {
-  background-color: black;
+  border: 1px solid red;
+}
+@media screen and (max-width: 600px) {
+  nav ul li a {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 600px) {
+  nav ul li {
+    display: block;
+    margin: 30px 0;
+    line-height: 50px;
+  }
 }
 @media screen and (max-width: 830px) {
   nav ul {
     width: 70%;
-    margin-left: 10px;
     display: flex;
+    margin-right: 40px;
+  }
+}
+@media screen and (max-width: 600px) {
+  nav ul {
+    width: 60%;
+    right: -90%;
+    display: flex;
+    position: fixed;
+    background-color: black;
+    height: 50vh;
+    top: 120px;
+    text-align: center;
+    flex-direction: column;
+    transition: all 0.5s;
+  }
+}
+@media screen and (max-width: 600px) and (max-width: 600px) {
+  nav #check:checked ~ ul {
+    right: -37px;
   }
 }
 
-.Active,
+.home,
 .about,
 .contact {
-  background-color: black;
+  border: 1px solid red;
 }
 
+label #btn,
+label #cancel {
+  color: white;
+  font-size: 30px;
+  line-height: 60px;
+  margin-right: 40px;
+  position: absolute;
+  top: 30px;
+  right: 0;
+  cursor: pointer;
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  label #btn {
+    display: block;
+  }
+}
+#check {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  #check:checked ~ label #btn {
+    display: none;
+  }
+}
+@media screen and (max-width: 600px) {
+  #check:checked ~ label #cancel {
+    display: block;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -137,6 +200,29 @@ nav ul li a:hover {
   margin: auto;
   box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.464);
   background-image: url(/images/Tik-krerng.jpg);
+}
+.content-cards .cards .content-card1 .card-image1 button,
+.content-cards .cards .content-card2 .card-image1 button,
+.content-cards .cards .content-card3 .card-image1 button,
+.content-cards .cards .content-card4 .card-image1 button,
+.content-cards .cards .content-card5 .card-image1 button,
+.content-cards .cards .content-card6 .card-image1 button,
+.content-cards .cards .content-card7 .card-image1 button,
+.content-cards .cards .content-card8 .card-image1 button {
+  transform: translateY(120px);
+  margin-left: 20px;
+  height: 35px;
+  width: 70px;
+}
+.content-cards .cards .content-card1 .card-image1 button:hover,
+.content-cards .cards .content-card2 .card-image1 button:hover,
+.content-cards .cards .content-card3 .card-image1 button:hover,
+.content-cards .cards .content-card4 .card-image1 button:hover,
+.content-cards .cards .content-card5 .card-image1 button:hover,
+.content-cards .cards .content-card6 .card-image1 button:hover,
+.content-cards .cards .content-card7 .card-image1 button:hover,
+.content-cards .cards .content-card8 .card-image1 button:hover {
+  opacity: 0;
 }
 .content-cards .cards .content-card1 .card1,
 .content-cards .cards .content-card2 .card1,
@@ -398,7 +484,7 @@ nav ul li a:hover {
 }
 header {
   width: 100%;
-  padding-top: 15vh;
+  padding-top: 18vh;
   color: white;
   height: 620px;
   background-image: url(../images/photo_2023-09-24_10-59-29.jpg);
@@ -413,7 +499,7 @@ header .bg-img {
   height: 100%;
 }
 header h3 {
-  padding: 50px 0 30px 60px;
+  padding: 60px 0 30px 60px;
 }
 header h3 .bold {
   font-size: 25px;
@@ -434,7 +520,7 @@ header .content-par {
     padding-top: 10px;
   }
   header h3 {
-    padding: 80px 0 30px 40px;
+    padding: 50px 0 30px 40px;
   }
 }
 @media screen and (max-width: 830px) {
@@ -442,11 +528,16 @@ header .content-par {
     width: 70%;
   }
 }
+@media screen and (max-width: 600px) {
+  header .content-par {
+    width: 90%;
+  }
+}
 header .box-header {
   display: flex;
   width: 90%;
   margin-left: 65px;
-  margin-top: 6%;
+  margin-top: 4%;
 }
 header .box-header .box-content1 {
   width: 49%;
@@ -491,11 +582,11 @@ header .box-header .box-content2 h5 {
 }
 @media screen and (max-width: 830px) {
   header .box-header .box-content1 {
-    height: 300px;
+    height: 280px;
     width: 49%;
   }
   header .box-header .box-content2 {
-    height: 300px;
+    height: 280px;
     width: 49%;
   }
 }
@@ -507,7 +598,7 @@ header .box-header .box-content2 h5 {
 
 @media screen and (max-width: 830px) {
   header {
-    height: 700px;
+    height: 780px;
   }
 }
 .container .pic-content {
