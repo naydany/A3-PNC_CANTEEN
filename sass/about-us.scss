@@ -149,7 +149,7 @@ body {
 
                 @include responsive ('tablet') {
                     .text {
-                        width: 78vh;
+                        width: 70vh;
                         text-align: justify;
                         margin-top: 0vh;
                         margin-left: -50%;
@@ -158,9 +158,9 @@ body {
                 }
                 @include responsive ('mobile') {
                     .text {
-                        width:70%;
+                        width:60%;
                         text-align: justify;
-                        margin-top: -36.8vh;
+                        margin-top: -29vh;
                         margin-left: -50px;
                         border-radius: 0px;
                     }
@@ -223,7 +223,7 @@ body {
                 display: flex;
                 flex-direction: column;
                 width: 98%;
-                height: 52.5vh;
+                height: 47vh;
             }
 
         }
