@@ -55,12 +55,12 @@ body {
 
         @include responsive ('tablet') {
             .p-container1 {
-                width: 99%;
+                width: 87%;
                 font-size: 15px;
                 justify-content: center;
                 align-items: center;
                 display: flex;
-                margin-left: 55px;
+                margin-left: -40px;
             }
         }
         @include responsive ('mobile') {

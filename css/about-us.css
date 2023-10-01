@@ -179,12 +179,12 @@ body {
 }
 @media screen and (max-width: 830px) {
   .main .container1 .p-container1 {
-    width: 99%;
+    width: 87%;
     font-size: 15px;
     justify-content: center;
     align-items: center;
     display: flex;
-    margin-left: 55px;
+    margin-left: -40px;
   }
 }
 @media screen and (max-width: 600px) {
